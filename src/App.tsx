@@ -1,16 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Article } from './templates';
-import './App.css';
+import React from 'react'
+import { Article } from './templates'
+import ARTICLES, {IArticles} from './articles'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+import './App.css'
 
+const default_url = process.env.REACT_APP_MEDIA_CENTRE_DEFAULT_URL
 
+const fetch_articles_routes = (articles: IArticles) => {
+  let routes = []
+  for(const [category, articles_] of Object.entries(articles)) {
+    for(const article of articles_) {
+      const article_path = `/${category}/${article}`
+      const article_url = default_url + `/${category}/${article}`
+      routes.push(
+        <Route path={article_path} element={<Article article_url={article_url}></Article>} />
+      )
+    }
+  }
 
-function App() {
+  return routes
+}
+
+const App: React.FC = () => {
+  const articles_routes = fetch_articles_routes(ARTICLES)
+  console.log(articles_routes)
   return (
-    <div className="App">
-      {/* This is a markdown to test */}
-      <Article article_url='https://raw.githubusercontent.com/4digitmwc/skillban-articles/main/readme.md' />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          {articles_routes}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
