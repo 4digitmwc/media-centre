@@ -5,7 +5,8 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  HashRouter
+  HashRouter,
+  Link
 } from "react-router-dom";
 import './App.css'
 
@@ -30,13 +31,20 @@ const App: React.FC = () => {
   const articles_routes = fetch_articles_routes(ARTICLES)
   console.log(articles_routes)
   return (
+    <div>
       <HashRouter>
         <div className="App">
           <Routes>
             {articles_routes}
           </Routes>
         </div>
+        <Link to="/opinions/sample.md">Link to sample opinion</Link> <br/>
+        <Link to="/interviews/sample.md">Link to sample interview</Link> <br/>
+        <Link to="/stories/sample.md">Link to sample story</Link> <br/>
       </HashRouter>
+      
+    </div>
+
   )
 }
 
