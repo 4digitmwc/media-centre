@@ -2,7 +2,6 @@ import React from 'react'
 import { Article } from './templates'
 import ARTICLES, {IArticles} from './articles'
 import {
-  BrowserRouter as Router,
   Routes,
   Route,
   HashRouter,
@@ -12,7 +11,7 @@ import './App.css'
 
 const default_url = process.env.REACT_APP_MEDIA_CENTRE_DEFAULT_URL
 
-const fetch_articles_routes = (articles: IArticles) => {
+const fetchArticles = (articles: IArticles) => {
   let routes = []
   for(const [category, articles_] of Object.entries(articles)) {
     for(const article of articles_) {
@@ -28,8 +27,7 @@ const fetch_articles_routes = (articles: IArticles) => {
 }
 
 const App: React.FC = () => {
-  const articles_routes = fetch_articles_routes(ARTICLES)
-  console.log(articles_routes)
+  const articles_routes = fetchArticles(ARTICLES)
   return (
     <div>
       <HashRouter>
