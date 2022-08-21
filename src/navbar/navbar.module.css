@@ -1,0 +1,34 @@
+.navbar {
+    display: flex;
+}
+
+.stories {
+   margin: 20px 7.27%;
+   padding: 10px;
+   text-decoration: none;
+}
+
+.stories:hover {
+    color: black;
+    background-color: white;
+}
+
+.interviews {
+    margin: 20px 8%;
+    text-decoration: none;
+}
+
+.logo {
+    margin: 10px 8%;
+    text-decoration: none;
+}
+
+.opinions {
+    margin: 20px 8%;
+    text-decoration: none;
+}
+
+.skillbans {
+    margin: 20px 8%;
+    text-decoration: none;
+}

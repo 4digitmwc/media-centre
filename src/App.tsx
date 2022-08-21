@@ -1,5 +1,6 @@
 import React from 'react'
 import { Article } from './templates'
+import { NavBar } from './navbar';
 import ARTICLES, {IArticles} from './articles'
 import {
   Routes,
@@ -29,9 +30,10 @@ const fetchArticles = (articles: IArticles) => {
 const App: React.FC = () => {
   const articles_routes = fetchArticles(ARTICLES)
   return (
-    <div>
+    <div className="App">
+      <NavBar />
       <HashRouter>
-        <div className="App">
+        <div>
           <Routes>
             {articles_routes}
           </Routes>
@@ -40,7 +42,6 @@ const App: React.FC = () => {
         <Link to="/interviews/sample.md">Link to sample interview</Link> <br/>
         <Link to="/stories/sample.md">Link to sample story</Link> <br/>
       </HashRouter>
-      
     </div>
 
   )

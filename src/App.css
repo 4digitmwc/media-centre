@@ -32,3 +32,12 @@
     transform: rotate(360deg);
   }
 }
+
+* {
+  background-color: black;
+  color: white;
+}
+
+a {
+  color: white;
+}
