@@ -9,6 +9,9 @@ import {
   Link
 } from "react-router-dom";
 import './App.css'
+import { Interviews } from './interviews';
+import { Stories } from './stories';
+import { Opinions } from './opinions';
 
 const default_url = process.env.REACT_APP_MEDIA_CENTRE_DEFAULT_URL
 
@@ -19,7 +22,7 @@ const fetchArticles = (articles: IArticles) => {
       const article_path = `/${category}/${article}`
       const article_url = default_url + `/${category}/${article}`
       routes.push(
-        <Route path={article_path} element={<Article article_url={article_url}></Article>} />
+        <Route path={article_path} element={<Article article_url={article_url} />} />
       )
     }
   }
@@ -35,6 +38,9 @@ const App: React.FC = () => {
       <HashRouter>
         <div>
           <Routes>
+            <Route path="/interviews" element={<Interviews />} />
+            <Route path="/stories" element={<Stories />} />
+            <Route path="/opinions" element={<Opinions />} />
             {articles_routes}
           </Routes>
         </div>
