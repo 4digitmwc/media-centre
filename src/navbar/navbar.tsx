@@ -1,6 +1,4 @@
-import React, { useState } from "react"
-import ReactMarkdown from 'react-markdown'
-import axios from 'axios'
+import React from "react"
 
 import logo from "../logo.svg"
 import NavbarStyle from "./navbar.module.css"

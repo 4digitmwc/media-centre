@@ -1,6 +1,4 @@
-import React, { useState } from "react"
-import ReactMarkdown from 'react-markdown'
-import axios from 'axios'
+import React from "react"
 
 const Opinion: React.FC = () => {
     return <div>
