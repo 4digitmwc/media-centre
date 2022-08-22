@@ -1,7 +1,7 @@
 import React from "react"
 
 export interface IThumbnail {
-    text: string,
+    redirect_url: string,
     thumbnail_url: string,
     size: {
         width: number,
@@ -9,10 +9,8 @@ export interface IThumbnail {
     }
 }
 
-const ThumbnailButton: React.FC<IThumbnail> = ({text, thumbnail_url, size: {width, height}}) => {
-    return <div>
-
-    </div>
+const ThumbnailButton: React.FC<{thumbnail: IThumbnail}> = ({thumbnail: {redirect_url, thumbnail_url, size: {width, height}}}) => {
+    return <img src={thumbnail_url} alt="aaaa" style={{width, height}} onClick={() => window.open("/#" + redirect_url)} />
 }
 
 export default ThumbnailButton

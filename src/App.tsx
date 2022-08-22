@@ -12,6 +12,7 @@ import './App.css'
 import { Interviews } from './interviews';
 import { Stories } from './stories';
 import { Opinions } from './opinions';
+import { HomePage } from './homepage';
 
 const default_url = process.env.REACT_APP_MEDIA_CENTRE_DEFAULT_URL
 
@@ -38,6 +39,7 @@ const App: React.FC = () => {
       <HashRouter>
         <div>
           <Routes>
+            <Route path="/" element={<HomePage />} />
             <Route path="/interviews" element={<Interviews />} />
             <Route path="/stories" element={<Stories />} />
             <Route path="/opinions" element={<Opinions />} />
