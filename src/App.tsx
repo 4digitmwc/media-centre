@@ -28,24 +28,22 @@ const fetchArticles = (articles: IArticles) => {
     }
   }
 
-  return routes
+  return [...routes, <Route path="/interviews" element={<Interviews />} />,
+            <Route path="/stories" element={<Stories />} />,
+            <Route path="/opinions" element={<Opinions />} />,
+            <Route path="/" element={<HomePage />} />
+        ]
 }
 
 const App: React.FC = () => {
   const articles_routes = fetchArticles(ARTICLES)
   return (
     <div className="App">
-      <NavBar />
       <HashRouter>
-        <div>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/interviews" element={<Interviews />} />
-            <Route path="/stories" element={<Stories />} />
-            <Route path="/opinions" element={<Opinions />} />
+        <NavBar />
+        <Routes>
             {articles_routes}
-          </Routes>
-        </div>
+        </Routes>
         <Link to="/opinions/sample.md">Link to sample opinion</Link> <br/>
         <Link to="/interviews/sample.md">Link to sample interview</Link> <br/>
         <Link to="/stories/sample.md">Link to sample story</Link> <br/>
