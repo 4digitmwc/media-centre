@@ -2,12 +2,9 @@ import React from "react"
 
 import logo from "../logo.svg"
 import NavbarStyle from "./navbar.module.css"
-import { HashRouter, Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const NavBar: React.FC = () => {
-
-    
-
     return <div className={NavbarStyle.navbar}>
         <Link className={NavbarStyle.stories} to="/stories">Stories</Link>
         <Link className={NavbarStyle.stories} to="/interviews">Interviews</Link>
