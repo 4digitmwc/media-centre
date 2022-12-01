@@ -1,10 +1,8 @@
-.thumbnailbutton {
-    text-decoration: none;
-}
-
 .thumbnailText {
     position: absolute;
-    bottom: 8px;
+    bottom: 1px;
+    background: none;
+    text-shadow:black;
 }
 
 .card {

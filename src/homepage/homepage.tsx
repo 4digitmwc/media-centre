@@ -1,5 +1,5 @@
 import React from "react"
-import ThumbNailButton, { IThumbnail } from "../templates/thumbnailbutton"
+import ThumbnailButton, { IThumbnail } from "../templates/thumbnailbutton"
 import HomePageStyles from "./homepage.module.css"
 
 const ThisWeekHighLight: IThumbnail = {
@@ -14,18 +14,114 @@ const ThisWeekHighLight: IThumbnail = {
 
 const StoryOfTheWeek: IThumbnail = {
     redirect_url: "/stories/sample.md",
-    thumbnail_url: "data:image/jpeg;base64,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",
+    thumbnail_url: "https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg",
     size: {
-        width: 160,
-        height: 120
+        width: 210,
+        height: 157
     },
     text: "Story of the week"
 }
 
+const InterviewForTheWeek: IThumbnail = {
+    redirect_url: "/interviews/sample.md",
+    thumbnail_url: "https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg",
+    size: {
+        width: 210,
+        height: 157
+    },
+    text: "Interview for the week"
+}
+
+const OpinionofTheWeek: IThumbnail = {
+    redirect_url: "/opinions/sample.md",
+    thumbnail_url: "https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg",
+    size: {
+        width: 210,
+        height: 157
+    },
+    text: "Opinion of the week"
+}
+
+const StatisticsDashboard: IThumbnail = {
+    redirect_url: "https://www.youtube.com/watch?v=fowOHiOJC7g",
+    thumbnail_url: "https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg",
+    size: {
+        width: 640,
+        height: 1000
+    },
+    text: "Statistics Dashboard"
+}
+
+const FantasyLeague: IThumbnail = {
+    redirect_url: "https://www.youtube.com/watch?v=fowOHiOJC7g",
+    thumbnail_url: "https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg",
+    size: {
+        width: 210,
+        height: 195
+    },
+    text: "Fantasy League"
+}
+
+const PickBanStatistics: IThumbnail = {
+    redirect_url: "https://www.youtube.com/watch?v=fowOHiOJC7g",
+    thumbnail_url: "https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg",
+    size: {
+        width: 210,
+        height: 195
+    },
+    text: "Pick/Ban Statistics"
+}
+
+const ScoreHighlights: IThumbnail = {
+    redirect_url: "https://www.youtube.com/watch?v=fowOHiOJC7g",
+    thumbnail_url: "https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg",
+    size: {
+        width: 210,
+        height: 195
+    },
+    text: "Score Highlights"
+}
+
+const Leaderboards: IThumbnail = {
+    redirect_url: "https://www.youtube.com/watch?v=fowOHiOJC7g",
+    thumbnail_url: "https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg",
+    size: {
+        width: 210,
+        height: 195
+    },
+    text: "Leaderboards"
+}
+
+const DownloadStatistics: IThumbnail = {
+    redirect_url: "https://www.youtube.com/watch?v=fowOHiOJC7g",
+    thumbnail_url: "https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg",
+    size: {
+        width: 210,
+        height: 195
+    },
+    text: "Download Statistics"
+}
+
 const HomePage: React.FC = () => {
     return <div className={HomePageStyles.homepage}>
-        <ThumbNailButton thumbnail={ThisWeekHighLight} />
-        <ThumbNailButton thumbnail={StoryOfTheWeek} />
+        <div style={{display: "flex", justifyContent: 'center'}}>
+            <ThumbnailButton thumbnail={ThisWeekHighLight} />
+            <div style={{display: "block"}}>
+                <ThumbnailButton thumbnail={StoryOfTheWeek} />
+                <ThumbnailButton thumbnail={InterviewForTheWeek} />
+                <ThumbnailButton thumbnail={OpinionofTheWeek} />
+            </div>
+        </div>
+        <div style={{display: "flex", justifyContent: 'center'}}>
+            <div style={{display: "block"}}>
+                <ThumbnailButton thumbnail={FantasyLeague} />
+                <ThumbnailButton thumbnail={PickBanStatistics} />
+                <ThumbnailButton thumbnail={ScoreHighlights} />
+                <ThumbnailButton thumbnail={Leaderboards} />
+                <ThumbnailButton thumbnail={DownloadStatistics} />
+            </div>
+            <ThumbnailButton thumbnail={StatisticsDashboard} />
+        </div>
     </div>
 }
 

@@ -13,10 +13,10 @@ export interface IThumbnail {
 
 const ThumbnailButton: React.FC<{thumbnail: IThumbnail}> = ({thumbnail: {redirect_url, thumbnail_url, size, text}}) => {
     const {width, height} = size
-    return <article className={styles.card}>
-                <img src={thumbnail_url} width={width} height={height} alt="aaa"/> 
-                <a href={redirect_url} className={styles.thumbnailText} style={{left:width - text.length * width / 15 / 2.1, fontSize:width / 15}} 
-                >{text}</a>
+    return <article className={styles.card} onClick={() => window.open(redirect_url)}>
+                <img src={thumbnail_url} width={width} height={height} alt="background"/> 
+                <p className={styles.thumbnailText} style={{left:width - text.length * width / 15 / 2 - 1, top: height - width / 5, fontSize:width / 15}} 
+                >{text}</p>
             </article>
 }
 
