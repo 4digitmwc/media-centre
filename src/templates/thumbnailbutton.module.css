@@ -1,10 +1,11 @@
 .thumbnailText {
     position: absolute;
-    bottom: 1px;
+    bottom: 7.27%;
     background: none;
     text-shadow:black;
 }
 
 .card {
     position: relative;
+    margin-bottom: -4px;
 }

@@ -17,7 +17,7 @@ const StoryOfTheWeek: IThumbnail = {
     thumbnail_url: "https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg",
     size: {
         width: 210,
-        height: 157
+        height: 160
     },
     text: "Story of the week"
 }
@@ -27,7 +27,7 @@ const InterviewForTheWeek: IThumbnail = {
     thumbnail_url: "https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg",
     size: {
         width: 210,
-        height: 157
+        height: 160
     },
     text: "Interview for the week"
 }
@@ -37,7 +37,7 @@ const OpinionofTheWeek: IThumbnail = {
     thumbnail_url: "https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg",
     size: {
         width: 210,
-        height: 157
+        height: 160
     },
     text: "Opinion of the week"
 }
@@ -57,7 +57,7 @@ const FantasyLeague: IThumbnail = {
     thumbnail_url: "https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg",
     size: {
         width: 210,
-        height: 195
+        height: 200
     },
     text: "Fantasy League"
 }
@@ -67,7 +67,7 @@ const PickBanStatistics: IThumbnail = {
     thumbnail_url: "https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg",
     size: {
         width: 210,
-        height: 195
+        height: 200
     },
     text: "Pick/Ban Statistics"
 }
@@ -77,7 +77,7 @@ const ScoreHighlights: IThumbnail = {
     thumbnail_url: "https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg",
     size: {
         width: 210,
-        height: 195
+        height: 200
     },
     text: "Score Highlights"
 }
@@ -87,7 +87,7 @@ const Leaderboards: IThumbnail = {
     thumbnail_url: "https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg",
     size: {
         width: 210,
-        height: 195
+        height: 200
     },
     text: "Leaderboards"
 }
@@ -97,7 +97,7 @@ const DownloadStatistics: IThumbnail = {
     thumbnail_url: "https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg",
     size: {
         width: 210,
-        height: 195
+        height: 200
     },
     text: "Download Statistics"
 }

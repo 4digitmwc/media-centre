@@ -14,11 +14,12 @@ export interface IThumbnail {
 const ThumbnailButton: React.FC<{thumbnail: IThumbnail}> = ({thumbnail: {redirect_url, thumbnail_url, size, text}}) => {
     const {width, height} = size
     const [textStyle, setTextStyle] = useState<any>({
-        right:"3%", 
-        top: height - width / 5 + 5, 
-        fontSize:width / 15
+        right:"3%",  
+        fontSize:width / 15,
+        margin: 0,
+        padding: 0
     })
-    const [imageStyle, setImageStyle] = useState<any>({opacity: 1})
+    const [imageStyle, setImageStyle] = useState<any>({opacity: 1, margin: 0, padding: 0})
     const toggleImageBlur = () => {
         setImageStyle({opacity: 0.7})
     }
@@ -44,14 +45,14 @@ const ThumbnailButton: React.FC<{thumbnail: IThumbnail}> = ({thumbnail: {redirec
                     onMouseLeave={toggleImageDefault} 
                     alt="background"
                 /> 
-                <p 
+                <div
                     className={styles.thumbnailText} 
                     style={textStyle} 
                     onMouseOver={toggleTextUnderline}
                     onMouseLeave={toggleTextDefault}
                 >
                     {text}
-                </p>
+                </div>
             </article>
 }
 
