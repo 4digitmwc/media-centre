@@ -13,7 +13,7 @@ const Article: React.FC<{article_url: string}> = ({article_url}) => {
 
     updateArticle()
 
-    return <section>
+    return <section style={{width: "50%", textAlign:"left", marginLeft: 40}}>
         <ReactMarkdown>{article}</ReactMarkdown>
     </section>
 }

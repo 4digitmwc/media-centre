@@ -13,7 +13,7 @@ const ThisWeekHighLight: IThumbnail = {
 }
 
 const StoryOfTheWeek: IThumbnail = {
-    redirect_url: "/#/stories/sample.md",
+    redirect_url: "/#/stories",
     thumbnail_url: "https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg",
     size: {
         width: 210,

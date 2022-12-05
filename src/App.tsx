@@ -44,9 +44,9 @@ const App: React.FC = () => {
         <Routes>
             {articles_routes}
         </Routes>
-        <Link to="/opinions/sample.md">Link to sample opinion</Link> <br/>
+        {/* <Link to="/opinions/sample.md">Link to sample opinion</Link> <br/>
         <Link to="/interviews/sample.md">Link to sample interview</Link> <br/>
-        <Link to="/stories/sample.md">Link to sample story</Link> <br/>
+        <Link to="/stories/sample.md">Link to sample story</Link> <br/> */}
       </HashRouter>
     </div>
 

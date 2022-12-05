@@ -22,14 +22,14 @@ export interface IStory {
 }
 
 const Header: React.FC<{header: IHeader}> = ({header: {title, subtitle}}) => {
-    return <section>
+    return <section className={styles.header}>
         <h1>{title}</h1>
         <h4>{subtitle}</h4>
     </section>
 }
 
 const Profile: React.FC<{profile: IProfile}> = ({profile: {username, profile_link, profile_pic_url, description}}) => {
-    return <section>
+    return <section style={{textAlign: "right", marginLeft: 40}}>
         <img src={profile_pic_url} alt={username} width={64} height={64} />
         <a href={profile_link}>{username}</a>
         <article>
@@ -39,13 +39,24 @@ const Profile: React.FC<{profile: IProfile}> = ({profile: {username, profile_lin
 }
 
 const Story: React.FC<{story: IStory}> = ({story: {image, header, article_url, author}}) => {
-    return <div className={styles.parallax_scrolling} style={{backgroundImage: image}}>
+    const parallax_scrolling = {
+        backgroundAttachment: "fixed",
+        bacckgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundImage: `url(${image})`
+    }
+    return <div style={parallax_scrolling}>
         {/* Header */}
         <Header header={header} />
         {/* Story */}
-        <Article article_url={article_url} />
-        {/* Profile */}
-        <Profile profile={author} />
+        <div style={{backgroundSize: "100% auto", backgroundColor: "rgba(0,0,0,50%)", display: "flex"}}>
+            <Article article_url={article_url} />
+            {/* Profile */}
+            <Profile profile={author} />
+        </div>
+        
+       
     </div>
 }
 
