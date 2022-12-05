@@ -19,10 +19,10 @@ const ThumbnailButton: React.FC<{thumbnail: IThumbnail}> = ({thumbnail: {redirec
         fontSize:width / 15
     })
     const [imageStyle, setImageStyle] = useState<any>({opacity: 1})
-    const toggleBlur = () => {
+    const toggleImageBlur = () => {
         setImageStyle({opacity: 0.7})
     }
-    const toggleBack = () => {
+    const toggleImageDefault = () => {
         setImageStyle({opacity: 1})
     }
     const toggleTextUnderline = () => {
@@ -40,8 +40,8 @@ const ThumbnailButton: React.FC<{thumbnail: IThumbnail}> = ({thumbnail: {redirec
                     width={width} 
                     height={height} 
                     style={imageStyle} 
-                    onMouseOver={toggleBlur} 
-                    onMouseLeave={toggleBack} 
+                    onMouseOver={toggleImageBlur} 
+                    onMouseLeave={toggleImageDefault} 
                     alt="background"
                 /> 
                 <p 
