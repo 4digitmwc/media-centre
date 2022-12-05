@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import styles from './thumbnailbutton.module.css'
 
 export interface IThumbnail {
@@ -13,10 +13,45 @@ export interface IThumbnail {
 
 const ThumbnailButton: React.FC<{thumbnail: IThumbnail}> = ({thumbnail: {redirect_url, thumbnail_url, size, text}}) => {
     const {width, height} = size
-    return <article className={styles.card} onClick={() => window.open(redirect_url)}>
-                <img src={thumbnail_url} width={width} height={height} alt="background"/> 
-                <p className={styles.thumbnailText} style={{left:width - text.length * width / 15 / 2 - 1, top: height - width / 5, fontSize:width / 15}} 
-                >{text}</p>
+    const [textStyle, setTextStyle] = useState<any>({
+        right:"3%", 
+        top: height - width / 5 + 5, 
+        fontSize:width / 15
+    })
+    const [imageStyle, setImageStyle] = useState<any>({opacity: 1})
+    const toggleBlur = () => {
+        setImageStyle({opacity: 0.7})
+    }
+    const toggleBack = () => {
+        setImageStyle({opacity: 1})
+    }
+    const toggleTextUnderline = () => {
+        setTextStyle({...textStyle, textDecoration: "underline"})
+    }
+    const toggleTextDefault = () => {
+        setTextStyle({...textStyle, textDecoration:"none"})
+    }
+    const openArticle = () => {
+        window.open(redirect_url)
+    }
+    return <article className={styles.card} onClick={openArticle}>
+                <img 
+                    src={thumbnail_url} 
+                    width={width} 
+                    height={height} 
+                    style={imageStyle} 
+                    onMouseOver={toggleBlur} 
+                    onMouseLeave={toggleBack} 
+                    alt="background"
+                /> 
+                <p 
+                    className={styles.thumbnailText} 
+                    style={textStyle} 
+                    onMouseOver={toggleTextUnderline}
+                    onMouseLeave={toggleTextDefault}
+                >
+                    {text}
+                </p>
             </article>
 }
 
