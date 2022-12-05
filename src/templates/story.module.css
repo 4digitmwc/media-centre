@@ -1,6 +1,4 @@
-.parallax_scrolling {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.header {
+    text-align: right;
+    margin-right: 20px;
 }

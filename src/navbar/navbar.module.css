@@ -1,9 +1,10 @@
 .navbar {
     display: flex;
+    background-color: black;
 }
 
 .stories {
-   margin: 20px 7.27%;
+   margin: 20px 6.67%;
    padding: 10px;
    text-decoration: none;
 }
@@ -14,21 +15,21 @@
 }
 
 .interviews {
-    margin: 20px 8%;
+    margin: 20px 6.67%;
     text-decoration: none;
 }
 
 .logo {
-    margin: 10px 8%;
+    margin: 10px 6.67%;
     text-decoration: none;
 }
 
 .opinions {
-    margin: 20px 8%;
+    margin: 20px 6.67%;
     text-decoration: none;
 }
 
 .skillbans {
-    margin: 20px 8%;
+    margin: 20px 6.67%;
     text-decoration: none;
 }

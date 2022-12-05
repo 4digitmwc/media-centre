@@ -14,7 +14,7 @@ const sample_story: IStory = {
         profile_pic_url: "https://i1.sndcdn.com/avatars-Iupp3CJ3dozLl03E-29z6mQ-t500x500.jpg",
         description: "This is the description of HowToPlayLN"
     },
-    image: "https://f4.bcbits.com/img/a1053230192_2.jpg"
+    image: "https://mike42.me/blog/wp-content/uploads/2017/12/stars-rounded.png"
 }
 
 const Stories: React.FC = () => {
