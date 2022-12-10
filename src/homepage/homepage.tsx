@@ -3,7 +3,7 @@ import ThumbnailButton, { IThumbnail } from "../templates/thumbnailbutton"
 import HomePageStyles from "./homepage.module.css"
 
 const ThisWeekHighLight: IThumbnail = {
-    redirect_url: "/",
+    redirect_url: "/media-centre/",
     thumbnail_url: "https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg",
     size: {
         width: 640,
@@ -13,7 +13,7 @@ const ThisWeekHighLight: IThumbnail = {
 }
 
 const StoryOfTheWeek: IThumbnail = {
-    redirect_url: "/#/stories",
+    redirect_url: "/media-centre/#/stories",
     thumbnail_url: "https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg",
     size: {
         width: 210,
@@ -23,7 +23,7 @@ const StoryOfTheWeek: IThumbnail = {
 }
 
 const InterviewForTheWeek: IThumbnail = {
-    redirect_url: "/#/interviews/sample.md",
+    redirect_url: "/media-centre/#/interviews/sample.md",
     thumbnail_url: "https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg",
     size: {
         width: 210,
@@ -33,7 +33,7 @@ const InterviewForTheWeek: IThumbnail = {
 }
 
 const OpinionofTheWeek: IThumbnail = {
-    redirect_url: "/#/opinions/sample.md",
+    redirect_url: "/media-centre/#/opinions/sample.md",
     thumbnail_url: "https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg",
     size: {
         width: 210,
