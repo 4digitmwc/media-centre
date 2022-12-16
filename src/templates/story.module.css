@@ -1,4 +1,21 @@
 .header {
-    text-align: right;
-    margin-right: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 350px;
+    padding: 0 20%;
+    justify-content: center;
+    background: #05356C;
+    border: solid 1px #05356C;
+    line-height: 3px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 18px;
 }
