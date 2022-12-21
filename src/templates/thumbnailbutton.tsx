@@ -33,7 +33,7 @@ const ThumbnailButton: React.FC<{thumbnail: IThumbnail}> = ({thumbnail: {redirec
         setTextStyle({...textStyle, textDecoration:"none"})
     }
     const openArticle = () => {
-        window.open(redirect_url)
+        window.location.replace(redirect_url)
     }
     return <article className={styles.card} onClick={openArticle}>
                 <img 

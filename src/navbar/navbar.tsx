@@ -9,7 +9,7 @@ const NavBar: React.FC = () => {
         <Link className={NavbarStyle.stories} to="/stories">Stories</Link>
         <Link className={NavbarStyle.stories} to="/interviews">Interviews</Link>
         <img className={NavbarStyle.logo} src={logo} onClick={() => {
-            window.open("/media-centre")
+            window.location.replace("/media-centre")
         }} alt="4dm2023-logo"/>
         <Link className={NavbarStyle.stories} to="/opinions">Opinions</Link>
         <a className={NavbarStyle.stories} href="https://4digitmwc.github.io/skillban-articles/">Skillbans</a>
