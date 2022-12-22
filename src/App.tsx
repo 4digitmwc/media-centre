@@ -1,56 +1,64 @@
-import React from 'react'
-import { Article } from './templates'
-import { NavBar } from './navbar';
-import ARTICLES, {IArticles} from './articles'
-import {
-  Routes,
-  Route,
-  HashRouter,
-  Link
-} from "react-router-dom";
-import './App.css'
-import { Interviews } from './interviews';
-import { Stories } from './stories';
-import { Opinions } from './opinions';
-import { HomePage } from './homepage';
+import * as React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import styles from './App.module.scss';
+import NavBar from './components/NavBar/NavBar';
+import { RouterPathEnum } from './enums/RouterPathEnum';
+import Home from './pages/Home/Home';
+import Stories from './pages/Stories/Stories';
+import Interviews from './pages/Interviews/Interviews';
+import Opinions from './pages/Opinions/Opinions';
+import ARTICLES, { IArticles } from './articles/Articles';
+import Article from './components/Article/Article';
 
-const default_url = process.env.REACT_APP_MEDIA_CENTRE_DEFAULT_URL
+const default_url = process.env.REACT_APP_MEDIA_CENTRE_DEFAULT_URL;
 
-const fetchArticles = (articles: IArticles) => {
-  let routes = []
-  for(const [category, articles_] of Object.entries(articles)) {
-    for(const article of articles_) {
-      const article_path = `/${category}/${article}`
-      const article_url = default_url + `/${category}/${article}`
-      routes.push(
-        <Route path={article_path} element={<Article article_url={article_url} />} />
-      )
-    }
-  }
-
-  return [...routes, <Route path="/interviews" element={<Interviews />} />,
-            <Route path="/stories" element={<Stories />} />,
-            <Route path="/opinions" element={<Opinions />} />,
-            <Route path="/" element={<HomePage />} />
-        ]
+interface IState {
+  articles_routes: JSX.Element[];
 }
 
-const App: React.FC = () => {
-  const articles_routes = fetchArticles(ARTICLES)
-  return (
-    <div className="App">
-      <HashRouter>
-        <NavBar />
-        <Routes>
-            {articles_routes}
-        </Routes>
-        {/* <Link to="/opinions/sample.md">Link to sample opinion</Link> <br/>
-        <Link to="/interviews/sample.md">Link to sample interview</Link> <br/>
-        <Link to="/stories/sample.md">Link to sample story</Link> <br/> */}
-      </HashRouter>
-    </div>
+class App extends React.Component<any, IState> {
+  constructor(props: any) {
+    super(props);
 
-  )
+    this.state = {
+      articles_routes: this.fetchArticles(ARTICLES),
+    };
+  }
+
+  fetchArticles(articles: IArticles) {
+    let routes = [];
+    for (const [category, articles_] of Object.entries(articles)) {
+      for (const article of articles_) {
+        const article_path = `/${category}/${article}`;
+        const article_url = default_url + `/${category}/${article}`;
+        routes.push(
+          <Route
+            path={article_path}
+            element={<Article article_url={article_url} />}
+          />
+        );
+      }
+    }
+
+    return [
+      ...routes,
+      <Route path={RouterPathEnum.HOME} element={<Home />} />,
+      <Route path={RouterPathEnum.STORIES} element={<Stories />} />,
+      <Route path={RouterPathEnum.INTERVIEWS} element={<Interviews />} />,
+      <Route path={RouterPathEnum.OPINIONS} element={<Opinions />} />,
+    ];
+  }
+
+  render() {
+    return (
+      <div className={styles.App}>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+          <NavBar />
+          <Routes>{this.state.articles_routes}</Routes>
+        </BrowserRouter>
+      </div>
+    );
+  }
 }
 
 export default App;
