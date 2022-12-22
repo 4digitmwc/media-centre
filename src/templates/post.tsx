@@ -1,6 +1,6 @@
 import React from "react"
 import Article from "./article"
-import styles from "./story.module.css"
+import styles from "./post.module.css"
 
 export interface IHeader {
     title: string
@@ -14,7 +14,7 @@ export interface IProfile {
     description: string
 }
 
-export interface IStory {
+export interface IPost {
     image: string,
     header: IHeader,
     article_url: string,
@@ -38,7 +38,7 @@ const Profile: React.FC<{profile: IProfile}> = ({profile: {username, profile_lin
     </section>
 }
 
-const Story: React.FC<{story: IStory}> = ({story: {image, header, article_url, author}}) => {
+const Post: React.FC<{post: IPost}> = ({post: {image, header, article_url, author}}) => {
     const parallax_scrolling = {
         backgroundAttachment: "fixed",
         bacckgroundPosition: "center",
@@ -60,4 +60,4 @@ const Story: React.FC<{story: IStory}> = ({story: {image, header, article_url, a
     </div>
 }
 
-export default Story
+export default Post

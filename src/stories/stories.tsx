@@ -1,8 +1,8 @@
 import React from "react"
-import { Story } from "../templates"
-import {IStory} from "../templates/story" 
+import { Post } from "../templates"
+import { IPost } from "../templates/post" 
 
-const sample_story: IStory = {
+const sample_story: IPost = {
     header: {
         title: "Chapter 0: Civilizations",
         subtitle: "Do extraterrestrial beings really exist? How do they look? Will they provision us with a home to live in?"
@@ -18,7 +18,7 @@ const sample_story: IStory = {
 }
 
 const Stories: React.FC = () => {
-    return <Story story={sample_story} />
+    return <Post post={sample_story} />
 }
 
 export default Stories
