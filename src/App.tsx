@@ -4,6 +4,7 @@ import styles from './App.module.scss';
 import NavBar from './components/NavBar/NavBar';
 import { RouterPathEnum } from './enums/RouterPathEnum';
 import Home from './pages/Home/Home';
+import Stories from './pages/Stories/Stories';
 
 class App extends React.Component {
   render() {
@@ -13,6 +14,7 @@ class App extends React.Component {
           <NavBar />
           <Routes>
             <Route path={RouterPathEnum.HOME} element={<Home />} />
+            <Route path={RouterPathEnum.STORIES} element={<Stories />} />
           </Routes>
         </BrowserRouter>
       </div>
