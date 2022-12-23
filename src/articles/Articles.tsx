@@ -10,6 +10,7 @@ export interface IArticles {
   stories: IArticle[];
   interviews: IArticle[];
   opinions: IArticle[];
+  highlights: IArticle[]
 }
 
 // Authors
@@ -79,6 +80,25 @@ const sample_opinion: IArticle = {
 
 const opinions = [sample_opinion]
 
+// Highlights
+
+const sample_highlight: IArticle = {
+  postName: "week-0-sample",
+  post: {
+    header: {
+      title: 'Mikuaimbot vs. The World',
+      subtitle:
+        'ok he pull up',
+    },
+    article_url:
+      'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/highlights/sample.md',
+    author: HowToPlayLN,
+    image: 'https://mike42.me/blog/wp-content/uploads/2017/12/stars-rounded.png',
+  }
+}
+
+const highlights = [sample_highlight]
+
 export const Articles: IArticles = {
-  stories, interviews, opinions
+  stories, interviews, opinions, highlights
 }
