@@ -3,7 +3,7 @@ import Article from '../Article/Article';
 import Header, { IHeader } from './modules/Header';
 import Profile, { IProfile } from './modules/Profile';
 
-export interface IStory {
+export interface IPost {
   image: string;
   header: IHeader;
   article_url: string;
@@ -20,8 +20,8 @@ export interface IState {
   };
 }
 
-class Story extends React.Component<IStory, IState> {
-  constructor(props: IStory) {
+class Post extends React.Component<IPost, IState> {
+  constructor(props: IPost) {
     super(props);
 
     this.state = {
@@ -57,4 +57,4 @@ class Story extends React.Component<IStory, IState> {
   }
 }
 
-export default Story;
+export default Post;

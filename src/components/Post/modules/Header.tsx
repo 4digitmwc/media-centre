@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../Story.module.scss';
+import styles from '../Post.module.scss';
 
 export interface IHeader {
   title: string;

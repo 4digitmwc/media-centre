@@ -1,7 +1,7 @@
 import React from 'react';
-import Story, { IStory } from '../../components/Story/Story';
+import Post, { IPost } from '../../components/Post/Post';
 
-const sample_story: IStory = {
+const sample_story: IPost = {
   header: {
     title: 'Chapter 0: Civilizations',
     subtitle:
@@ -21,7 +21,7 @@ const sample_story: IStory = {
 
 class Stories extends React.Component {
   render() {
-    return <Story {...sample_story} />;
+    return <Post {...sample_story} />;
   }
 }
 
