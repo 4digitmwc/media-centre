@@ -96,13 +96,13 @@ class NavBar extends React.Component<IArticles, any> {
           </a>
         </div>
         <div className={styles.dropdowns}>
-          <div style={{visibility: this.state.stories_dropdown, margin: "20px 5%"}} onMouseLeave={this.toggleStoryHidden}>
+          <div style={{contentVisibility: this.state.stories_dropdown, margin: "0px 5%"}} onMouseLeave={this.toggleStoryHidden}>
             <Dropdown article_type='stories' articles={this.props.stories}  />
           </div>
-          <div style={{visibility: this.state.interviews_dropdown, margin: "20px 0%", backgroundColor: "rgba(0,0,0,0)"}} onMouseLeave={this.toggleInterviewHidden}>
+          <div style={{contentVisibility: this.state.interviews_dropdown, margin: "0px 15%"}} onMouseLeave={this.toggleInterviewHidden}>
             <Dropdown article_type='interviews' articles={this.props.interviews} />
           </div>
-          <div style={{visibility: this.state.opinions_dropdown, margin: "20px 5%", backgroundColor: "rgba(0,0,0,0)"}} onMouseLeave={this.toggleOpinionHidden}>
+          <div style={{contentVisibility: this.state.opinions_dropdown, margin: "0px 20%"}} onMouseLeave={this.toggleOpinionHidden}>
             <Dropdown article_type='opinions' articles={this.props.opinions} />
           </div>
         </div>
