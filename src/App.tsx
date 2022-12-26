@@ -51,7 +51,7 @@ class App extends React.Component<any, IState> {
     return (
       <div className={styles.App}>
         <BrowserRouter basename={process.env.PUBLIC_URL}>
-          <NavBar />
+          <NavBar {...Articles} />
           <Routes>{this.state.articles_routes}</Routes>
         </BrowserRouter>
       </div>
