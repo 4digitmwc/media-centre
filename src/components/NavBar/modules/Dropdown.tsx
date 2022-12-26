@@ -29,7 +29,7 @@ export default class Dropdown extends React.Component<IProps, IState> {
         const {articles, article_type} = this.props
         const dropDownHTML = articles.map((article) => {
             const {post} = article
-            const redirect_url = `${article_type}/${article.postName}`
+            const redirect_url = `${process.env.PUBLIC_URL}/${article_type}/${article.postName}`
             return <li><a href={redirect_url}>{post.header.title}</a></li>
         })
         return <div style={this.state.style}>
