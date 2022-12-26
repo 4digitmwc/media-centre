@@ -4,9 +4,6 @@ import styles from './App.module.scss';
 import NavBar from './components/NavBar/NavBar';
 import { RouterPathEnum } from './enums/RouterPathEnum';
 import Home from './pages/Home/Home';
-import Stories from './pages/Stories/Stories';
-import Interviews from './pages/Interviews/Interviews';
-import Opinions from './pages/Opinions/Opinions';
 import { IArticles, Articles } from './articles/Articles';
 import Post from './components/Post/Post';
 
@@ -21,6 +18,12 @@ class App extends React.Component<any, IState> {
     this.state = {
       articles_routes: this.fetchArticles(Articles),
     };
+  }
+
+  getLastArticle(article_type: string) {
+    const articles = (Articles as any)[article_type]
+    const last_post = articles[articles.length - 1].post
+    return last_post
   }
 
   fetchArticles(articles: IArticles) {
@@ -41,9 +44,10 @@ class App extends React.Component<any, IState> {
     return [
       ...routes,
       <Route path={RouterPathEnum.HOME} element={<Home />} />,
-      <Route path={RouterPathEnum.STORIES} element={<Stories />} />,
-      <Route path={RouterPathEnum.INTERVIEWS} element={<Interviews />} />,
-      <Route path={RouterPathEnum.OPINIONS} element={<Opinions />} />,
+      <Route path={RouterPathEnum.HIGHLIGHTS} element={<Post {...this.getLastArticle('highlights')} />} />,
+      <Route path={RouterPathEnum.STORIES} element={<Post {...this.getLastArticle('stories')} />} />,
+      <Route path={RouterPathEnum.INTERVIEWS} element={<Post {...this.getLastArticle('interviews')} />} />,
+      <Route path={RouterPathEnum.OPINIONS} element={<Post {...this.getLastArticle('opinions')} />} />,
     ];
   }
 
