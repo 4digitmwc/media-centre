@@ -28,6 +28,8 @@ class NavBar extends React.Component<IArticles, any> {
     this.toggleInterviewHidden = this.toggleInterviewHidden.bind(this)
     this.toggleOpinionHidden = this.toggleOpinionHidden.bind(this)
     this.toggleHighlightHidden = this.toggleHighlightHidden.bind(this)
+
+    this.toggleAllHidden = this.toggleAllHidden.bind(this)
   }
 
   toggleStoryVisible() {
@@ -94,6 +96,15 @@ class NavBar extends React.Component<IArticles, any> {
     })
   }
 
+  toggleAllHidden() {
+    this.setState({
+      stories_dropdown: 'hidden',
+      interviews_dropdown: 'hidden',
+      opinions_dropdown: 'hidden',
+      highlights_dropdown: 'hidden',
+    })
+  }
+
   render() {
     return (
       <div>
@@ -110,27 +121,21 @@ class NavBar extends React.Component<IArticles, any> {
           <Link className={styles.stories} to={RouterPathEnum.OPINIONS} onMouseEnter={this.toggleOpinionVisible}>
             Opinions
           </Link>
-          {/* <a
-            className={styles.stories}
-            href='https://4digitmwc.github.io/skillban-articles/'
-          >
-            Skillbans
-          </a> */}
           <Link className={styles.stories} to={RouterPathEnum.HIGHLIGHTS} onMouseEnter={this.toggleHighlightVisible}>
             Highlights
           </Link>
         </div>
-        <div className={styles.dropdowns}>
-          <div style={{contentVisibility: this.state.stories_dropdown, margin: "0px 5%"}} onMouseLeave={this.toggleStoryHidden}>
-            <Dropdown article_type='stories' articles={this.props.stories}  />
+        <div className={styles.dropdowns} onMouseLeave={this.toggleAllHidden}>
+          <div style={{contentVisibility: this.state.stories_dropdown}} onMouseLeave={this.toggleStoryHidden}>
+            <Dropdown article_type='stories' articles={this.props.stories} />
           </div>
-          <div style={{contentVisibility: this.state.interviews_dropdown, margin: "0px 15%"}} onMouseLeave={this.toggleInterviewHidden}>
+          <div style={{contentVisibility: this.state.interviews_dropdown}} onMouseLeave={this.toggleInterviewHidden}>
             <Dropdown article_type='interviews' articles={this.props.interviews} />
           </div>
-          <div style={{contentVisibility: this.state.opinions_dropdown, margin: "0px 20%"}} onMouseLeave={this.toggleOpinionHidden}>
+          <div style={{contentVisibility: this.state.opinions_dropdown}} onMouseLeave={this.toggleOpinionHidden}>
             <Dropdown article_type='opinions' articles={this.props.opinions} />
           </div>
-          <div style={{contentVisibility: this.state.highlights_dropdown, margin: "0px 5%"}} onMouseLeave={this.toggleHighlightHidden}>
+          <div style={{contentVisibility: this.state.highlights_dropdown}} onMouseLeave={this.toggleHighlightHidden}>
             <Dropdown article_type='highlights' articles={this.props.highlights} />
           </div>
         </div>
