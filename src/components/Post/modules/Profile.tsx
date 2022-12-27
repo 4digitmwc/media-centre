@@ -11,8 +11,8 @@ class Profile extends React.Component<IProfile> {
   render() {
     return (
       <article style={{ textAlign: 'right', 
-      marginLeft: 80, display: 'flex', marginTop: 40,
-      backgroundColor: "rgba(255,255,255,0.1)" }}>
+      marginLeft: 80, display: 'flex', marginTop: 40
+      }}>
         <img
           src={this.props.profile_pic_url}
           alt={this.props.username}

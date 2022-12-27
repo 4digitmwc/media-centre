@@ -12,10 +12,6 @@ export interface IPost {
 
 export interface IState {
   parallaxScrolling: {
-    backgroundAttachment: string;
-    bacckgroundPosition: string;
-    backgroundRepeat: string;
-    backgroundSize: string;
     backgroundImage: string;
   };
 }
@@ -26,10 +22,6 @@ class Post extends React.Component<IPost, IState> {
 
     this.state = {
       parallaxScrolling: {
-        backgroundAttachment: 'fixed',
-        bacckgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
         backgroundImage: `url(${this.props.image})`,
       },
     };

@@ -4,13 +4,17 @@ import ThumbnailButton, {
 } from '../../components/ThumbnailButton/ThumbnailButton';
 import styles from './Home.module.scss';
 
+const Width = 650
+const HighlightHeight = 360
+const StatisticsHeight = 480
+
 const ThisWeekHighLight: IThumbnail = {
   redirect_url: '/media-centre/highlights',
   thumbnail_url:
     'https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg',
   size: {
-    width: 640,
-    height: 480,
+    width: Width,
+    height: HighlightHeight,
   },
   text: 'This week Highlight',
 };
@@ -20,8 +24,8 @@ const StoryOfTheWeek: IThumbnail = {
   thumbnail_url:
     'https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg',
   size: {
-    width: 210,
-    height: 160,
+    width: Width / 3,
+    height: HighlightHeight / 3,
   },
   text: 'Story of the week',
 };
@@ -31,8 +35,8 @@ const InterviewForTheWeek: IThumbnail = {
   thumbnail_url:
     'https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg',
   size: {
-    width: 210,
-    height: 160,
+    width: Width / 3,
+    height: HighlightHeight / 3,
   },
   text: 'Interview for the week',
 };
@@ -42,8 +46,8 @@ const OpinionofTheWeek: IThumbnail = {
   thumbnail_url:
     'https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg',
   size: {
-    width: 210,
-    height: 160,
+    width: Width / 3,
+    height: HighlightHeight / 3,
   },
   text: 'Opinion of the week',
 };
@@ -53,8 +57,8 @@ const StatisticsDashboard: IThumbnail = {
   thumbnail_url:
     'https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg',
   size: {
-    width: 640,
-    height: 1000,
+    width: Width,
+    height: StatisticsHeight,
   },
   text: 'Statistics Dashboard',
 };
@@ -64,8 +68,8 @@ const FantasyLeague: IThumbnail = {
   thumbnail_url:
     'https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg',
   size: {
-    width: 210,
-    height: 200,
+    width: Width / 3,
+    height: StatisticsHeight / 5,
   },
   text: 'Fantasy League',
 };
@@ -75,8 +79,8 @@ const PickBanStatistics: IThumbnail = {
   thumbnail_url:
     'https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg',
   size: {
-    width: 210,
-    height: 200,
+    width: Width / 3,
+    height: StatisticsHeight / 5,
   },
   text: 'Pick/Ban Statistics',
 };
@@ -86,8 +90,8 @@ const ScoreHighlights: IThumbnail = {
   thumbnail_url:
     'https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg',
   size: {
-    width: 210,
-    height: 200,
+    width: Width / 3,
+    height: StatisticsHeight / 5,
   },
   text: 'Score Highlights',
 };
@@ -97,19 +101,19 @@ const Leaderboards: IThumbnail = {
   thumbnail_url:
     'https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg',
   size: {
-    width: 210,
-    height: 200,
+    width: Width / 3,
+    height: StatisticsHeight / 5,
   },
   text: 'Leaderboards',
 };
 
-const DownloadStatistics: IThumbnail = {
+const SkillBans: IThumbnail = {
   redirect_url: 'https://4digitmwc.github.io/skillban-articles/',
   thumbnail_url:
     'https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg',
   size: {
-    width: 210,
-    height: 200,
+    width: Width / 3,
+    height: StatisticsHeight / 5,
   },
   text: 'Skillbans',
 };
@@ -132,7 +136,7 @@ class Home extends React.Component {
             <ThumbnailButton {...PickBanStatistics} />
             <ThumbnailButton {...ScoreHighlights} />
             <ThumbnailButton {...Leaderboards} />
-            <ThumbnailButton {...DownloadStatistics} />
+            <ThumbnailButton {...SkillBans} />
           </div>
           <ThumbnailButton {...StatisticsDashboard} />
         </div>
