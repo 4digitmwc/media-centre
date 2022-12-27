@@ -15,23 +15,27 @@ class NavBar extends React.Component<IArticles, any> {
     this.state = {
       stories_dropdown: 'hidden',
       interviews_dropdown: 'hidden',
-      opinions_dropdown: 'hidden'
+      opinions_dropdown: 'hidden',
+      highlights_dropdown: 'hidden',
     }
 
     this.toggleStoryVisible = this.toggleStoryVisible.bind(this)
     this.toggleInterviewVisible = this.toggleInterviewVisible.bind(this)
     this.toggleOpinionVisible = this.toggleOpinionVisible.bind(this)
+    this.toggleHighlightVisible = this.toggleHighlightVisible.bind(this)
 
     this.toggleStoryHidden = this.toggleStoryHidden.bind(this)
     this.toggleInterviewHidden = this.toggleInterviewHidden.bind(this)
     this.toggleOpinionHidden = this.toggleOpinionHidden.bind(this)
+    this.toggleHighlightHidden = this.toggleHighlightHidden.bind(this)
   }
 
   toggleStoryVisible() {
     this.setState({
       stories_dropdown: 'visible',
       interviews_dropdown: 'hidden',
-      opinions_dropdown: 'hidden'
+      opinions_dropdown: 'hidden',
+      highlights_dropdown: 'hidden',
     })
   }
 
@@ -39,7 +43,8 @@ class NavBar extends React.Component<IArticles, any> {
     this.setState({
       stories_dropdown: 'hidden',
       interviews_dropdown: 'visible',
-      opinions_dropdown: 'hidden'
+      opinions_dropdown: 'hidden',
+      highlights_dropdown: 'hidden',
     })
   }
 
@@ -47,7 +52,17 @@ class NavBar extends React.Component<IArticles, any> {
     this.setState({
       stories_dropdown: 'hidden',
       interviews_dropdown: 'hidden',
-      opinions_dropdown: 'visible'
+      opinions_dropdown: 'visible',
+      highlights_dropdown: 'hidden',
+    })
+  }
+
+  toggleHighlightVisible() {
+    this.setState({
+      stories_dropdown: 'hidden',
+      interviews_dropdown: 'hidden',
+      opinions_dropdown: 'hidden',
+      highlights_dropdown: 'visible',
     })
   }
 
@@ -72,6 +87,13 @@ class NavBar extends React.Component<IArticles, any> {
     })
   }
 
+  toggleHighlightHidden() {
+    this.setState({
+      ...this.state,
+      highlights_dropdown: 'hidden'
+    })
+  }
+
   render() {
     return (
       <div>
@@ -88,12 +110,15 @@ class NavBar extends React.Component<IArticles, any> {
           <Link className={styles.stories} to={RouterPathEnum.OPINIONS} onMouseEnter={this.toggleOpinionVisible}>
             Opinions
           </Link>
-          <a
+          {/* <a
             className={styles.stories}
             href='https://4digitmwc.github.io/skillban-articles/'
           >
             Skillbans
-          </a>
+          </a> */}
+          <Link className={styles.stories} to={RouterPathEnum.HIGHLIGHTS} onMouseEnter={this.toggleHighlightVisible}>
+            Highlights
+          </Link>
         </div>
         <div className={styles.dropdowns}>
           <div style={{contentVisibility: this.state.stories_dropdown, margin: "0px 5%"}} onMouseLeave={this.toggleStoryHidden}>
@@ -104,6 +129,9 @@ class NavBar extends React.Component<IArticles, any> {
           </div>
           <div style={{contentVisibility: this.state.opinions_dropdown, margin: "0px 20%"}} onMouseLeave={this.toggleOpinionHidden}>
             <Dropdown article_type='opinions' articles={this.props.opinions} />
+          </div>
+          <div style={{contentVisibility: this.state.highlights_dropdown, margin: "0px 5%"}} onMouseLeave={this.toggleHighlightHidden}>
+            <Dropdown article_type='highlights' articles={this.props.highlights} />
           </div>
         </div>
       </div>

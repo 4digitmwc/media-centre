@@ -21,6 +21,7 @@ export default class Dropdown extends React.Component<IProps, IState> {
             style: {
                 display: 'block',
                 textAlign: 'left',
+                contentVisibility: 'visible',
             }
         }
     }
@@ -30,7 +31,7 @@ export default class Dropdown extends React.Component<IProps, IState> {
         const dropDownHTML = articles.map((article) => {
             const {post} = article
             const redirect_url = `${process.env.PUBLIC_URL}/${article_type}/${article.postName}`
-            return <li><a href={redirect_url}>{post.header.title}</a></li>
+            return <li key={post.header.title}><a href={redirect_url}>{post.header.title}</a></li>
         })
         return <div style={this.state.style}>
             <ul>
