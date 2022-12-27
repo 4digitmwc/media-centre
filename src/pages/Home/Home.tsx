@@ -104,14 +104,14 @@ const Leaderboards: IThumbnail = {
 };
 
 const DownloadStatistics: IThumbnail = {
-  redirect_url: 'https://www.youtube.com/watch?v=fowOHiOJC7g',
+  redirect_url: 'https://4digitmwc.github.io/skillban-articles/',
   thumbnail_url:
     'https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg',
   size: {
     width: 210,
     height: 200,
   },
-  text: 'Download Statistics',
+  text: 'Skillbans',
 };
 
 class Home extends React.Component {
