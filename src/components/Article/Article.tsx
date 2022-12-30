@@ -42,6 +42,12 @@ class Article extends React.Component<IArticle, IState> {
     }
   }
 
+  componentDidUpdate(prevProps: Readonly<IArticle>, prevState: Readonly<IState>, snapshot?: any): void {
+      if(prevProps.article_url !== this.props.article_url) {
+        this.updateArticle()
+      }
+  }
+
   setArticle(article_data: string) {
     this.setState(() => ({
       article: article_data,
@@ -66,7 +72,7 @@ class Article extends React.Component<IArticle, IState> {
     }
 
     return (
-      <section style={{ width: '50%', textAlign: 'left', marginLeft: 40 }}>
+      <section style={{ width: '65%', textAlign: 'left', marginLeft: 40 }}>
         <ReactMarkdown>{this.state.article}</ReactMarkdown>
       </section>
     );

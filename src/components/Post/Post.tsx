@@ -3,7 +3,7 @@ import Article from '../Article/Article';
 import Header, { IHeader } from './modules/Header';
 import Profile, { IProfile } from './modules/Profile';
 
-export interface IStory {
+export interface IPost {
   image: string;
   header: IHeader;
   article_url: string;
@@ -12,24 +12,16 @@ export interface IStory {
 
 export interface IState {
   parallaxScrolling: {
-    backgroundAttachment: string;
-    bacckgroundPosition: string;
-    backgroundRepeat: string;
-    backgroundSize: string;
     backgroundImage: string;
   };
 }
 
-class Story extends React.Component<IStory, IState> {
-  constructor(props: IStory) {
+class Post extends React.Component<IPost, IState> {
+  constructor(props: IPost) {
     super(props);
 
     this.state = {
       parallaxScrolling: {
-        backgroundAttachment: 'fixed',
-        bacckgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
         backgroundImage: `url(${this.props.image})`,
       },
     };
@@ -57,4 +49,4 @@ class Story extends React.Component<IStory, IState> {
   }
 }
 
-export default Story;
+export default Post;
