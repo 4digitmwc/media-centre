@@ -11,18 +11,18 @@ const StatisticsHeight = 480
 const ThisWeekHighLight: IThumbnail = {
   redirect_url: '/media-centre/highlights',
   thumbnail_url:
-    'https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg',
+    'https://media.discordapp.net/attachments/512920101423415306/1058437395604852777/grey1.png?width=1053&height=662',
   size: {
     width: Width,
     height: HighlightHeight,
   },
-  text: 'This week Highlight',
+  text: 'Highlights for the Week',
 };
 
 const StoryOfTheWeek: IThumbnail = {
   redirect_url: '/media-centre/stories',
   thumbnail_url:
-    'https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg',
+    'https://media.discordapp.net/attachments/512920101423415306/1058437398167568384/red.png?width=1053&height=662',
   size: {
     width: Width / 3,
     height: HighlightHeight / 3,
@@ -33,7 +33,7 @@ const StoryOfTheWeek: IThumbnail = {
 const InterviewForTheWeek: IThumbnail = {
   redirect_url: '/media-centre/interviews',
   thumbnail_url:
-    'https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg',
+    'https://media.discordapp.net/attachments/512920101423415306/1058437395160248360/blue.png?width=1053&height=662',
   size: {
     width: Width / 3,
     height: HighlightHeight / 3,
@@ -44,7 +44,7 @@ const InterviewForTheWeek: IThumbnail = {
 const OpinionofTheWeek: IThumbnail = {
   redirect_url: '/media-centre/opinions',
   thumbnail_url:
-    'https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg',
+    'https://media.discordapp.net/attachments/512920101423415306/1058437398503108728/yellow.png?width=1053&height=662',
   size: {
     width: Width / 3,
     height: HighlightHeight / 3,
@@ -55,7 +55,7 @@ const OpinionofTheWeek: IThumbnail = {
 const StatisticsDashboard: IThumbnail = {
   redirect_url: 'https://www.youtube.com/watch?v=fowOHiOJC7g',
   thumbnail_url:
-    'https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg',
+    'https://cdn.discordapp.com/attachments/512920101423415306/1058437397827833987/grey7.png',
   size: {
     width: Width,
     height: StatisticsHeight,
@@ -66,7 +66,7 @@ const StatisticsDashboard: IThumbnail = {
 const FantasyLeague: IThumbnail = {
   redirect_url: 'https://www.youtube.com/watch?v=fowOHiOJC7g',
   thumbnail_url:
-    'https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg',
+    'https://media.discordapp.net/attachments/512920101423415306/1058437396036862034/grey2.png?width=1053&height=662',
   size: {
     width: Width / 3,
     height: StatisticsHeight / 5,
@@ -77,7 +77,7 @@ const FantasyLeague: IThumbnail = {
 const PickBanStatistics: IThumbnail = {
   redirect_url: 'https://www.youtube.com/watch?v=fowOHiOJC7g',
   thumbnail_url:
-    'https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg',
+    'https://media.discordapp.net/attachments/512920101423415306/1058437396410151003/grey3.png?width=1053&height=662',
   size: {
     width: Width / 3,
     height: StatisticsHeight / 5,
@@ -88,7 +88,7 @@ const PickBanStatistics: IThumbnail = {
 const ScoreHighlights: IThumbnail = {
   redirect_url: 'https://www.youtube.com/watch?v=fowOHiOJC7g',
   thumbnail_url:
-    'https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg',
+    'https://media.discordapp.net/attachments/512920101423415306/1058437396749897748/grey4.png?width=1053&height=662',
   size: {
     width: Width / 3,
     height: StatisticsHeight / 5,
@@ -99,7 +99,7 @@ const ScoreHighlights: IThumbnail = {
 const Leaderboards: IThumbnail = {
   redirect_url: 'https://www.youtube.com/watch?v=fowOHiOJC7g',
   thumbnail_url:
-    'https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg',
+    'https://media.discordapp.net/attachments/512920101423415306/1058437397144158288/grey5.png?width=1053&height=662',
   size: {
     width: Width / 3,
     height: StatisticsHeight / 5,
@@ -110,7 +110,7 @@ const Leaderboards: IThumbnail = {
 const SkillBans: IThumbnail = {
   redirect_url: 'https://4digitmwc.github.io/skillban-articles/',
   thumbnail_url:
-    'https://cdn.discordapp.com/attachments/807426115210706974/1047761320419799110/pexels-tobias-bjrkli-2113554.jpg',
+    'https://media.discordapp.net/attachments/512920101423415306/1058437397517447298/grey6.png?width=1053&height=662',
   size: {
     width: Width / 3,
     height: StatisticsHeight / 5,

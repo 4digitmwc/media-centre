@@ -36,8 +36,9 @@ class Post extends React.Component<IPost, IState> {
         <div
           style={{
             backgroundSize: '100% auto',
-            backgroundColor: 'rgba(0,0,0,50%)',
+            backgroundColor: 'rgba(0,0,0,20%)',
             display: 'flex',
+            minHeight: "100vh"
           }}
         >
           <Article article_url={this.props.article_url} />
