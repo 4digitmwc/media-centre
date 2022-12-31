@@ -22,7 +22,7 @@ class Profile extends React.Component<IProfile> {
         <div style={{display: 'block'}}>
           <a href={this.props.profile_link} 
           style={{textDecoration: "none", fontSize: 30}}><b>{this.props.username}</b></a>
-          <article style={{width: "200px"}}>{this.props.description}</article>
+          <article style={{width: "200px", marginLeft: "10px"}}>{this.props.description}</article>
         </div>
       </article>
     );
