@@ -13,6 +13,8 @@ export interface IPost {
 export interface IState {
   parallaxScrolling: {
     backgroundImage: string;
+    backgroundRepeat: string;
+    backgroundSize: string
   };
 }
 
@@ -23,6 +25,8 @@ class Post extends React.Component<IPost, IState> {
     this.state = {
       parallaxScrolling: {
         backgroundImage: `url(${this.props.image})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
       },
     };
   }
@@ -35,7 +39,6 @@ class Post extends React.Component<IPost, IState> {
         {/* Story */}
         <div
           style={{
-            backgroundSize: '100% auto',
             backgroundColor: 'rgba(0,0,0,20%)',
             display: 'flex',
             minHeight: "100vh"

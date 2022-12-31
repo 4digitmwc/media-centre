@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import { RouterPathEnum } from './enums/RouterPathEnum';
 import Home from './pages/Home/Home';
@@ -52,10 +52,10 @@ class App extends React.Component<any, IState> {
 
   render() {
     return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Router basename={process.env.PUBLIC_URL}>
         <NavBar {...Articles} />
         <Routes>{this.state.articles_routes}</Routes>
-      </BrowserRouter>
+      </Router>
     );
   }
 }
