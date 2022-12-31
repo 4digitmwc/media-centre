@@ -6,9 +6,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a,
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+  color:white !important;
+  text-decoration:none;
+}
+
