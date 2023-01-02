@@ -20,7 +20,28 @@ const HowToPlayLN: IProfile = {
   username: 'IndexError',
   profile_pic_url:
     'https://i1.sndcdn.com/avatars-Iupp3CJ3dozLl03E-29z6mQ-t500x500.jpg',
-  description: 'This is the description of HowToPlayLN',
+  description: 'list index out of range',
+}
+
+const Arccat: IProfile = {
+  profile_link: "https://osu.ppy.sh/users/4848294",
+  username: "cat",
+  profile_pic_url: "http://s.ppy.sh/a/4848294",
+  description: "sv cat. fart cart."
+}
+
+const TheFunk: IProfile = {
+  profile_link: "https://osu.ppy.sh/users/13981991",
+  username: "TheFunk",
+  profile_pic_url: "http://s.ppy.sh/a/13981991",
+  description: "Intern here but I'm just here for Capybaras"
+}
+
+const Auxesiaa: IProfile = {
+  profile_link: "https://osu.ppy.sh/users/16417718",
+  username: "Aux",
+  profile_pic_url: "http://s.ppy.sh/a/16417718",
+  description: "Pēdīcābo ego vōs et irrumābō"
 }
 
 // Stories
@@ -54,7 +75,7 @@ const sample_interview: IArticle = {
     },
     article_url:
       'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/interviews/sample.md',
-    author: HowToPlayLN,
+    author: Arccat,
     image: 'https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662',
   }
 }
@@ -73,7 +94,7 @@ const sample_opinion: IArticle = {
     },
     article_url:
       'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/opinions/sample.md',
-    author: HowToPlayLN,
+    author: Auxesiaa,
     image: 'https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662',
   }
 }
@@ -92,7 +113,7 @@ const sample_highlight: IArticle = {
     },
     article_url:
       'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/highlights/sample.md',
-    author: HowToPlayLN,
+    author: TheFunk,
     image: 'https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662',
   }
 }
