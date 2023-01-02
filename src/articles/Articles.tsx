@@ -1,5 +1,5 @@
 import { IPost } from "../components/Post/Post"
-import { IProfile } from "../components/Post/modules/Profile"
+import { HowToPlayLN, Auxesiaa, Arccat, Leon, TheFunk, Polytetral } from "./Profiles"
 
 export interface IArticle {
   postName: string;
@@ -11,37 +11,6 @@ export interface IArticles {
   interviews: IArticle[];
   opinions: IArticle[];
   highlights: IArticle[]
-}
-
-// Authors
-
-const HowToPlayLN: IProfile = {
-  profile_link: 'https://osu.ppy.sh/u/10879600',
-  username: 'IndexError',
-  profile_pic_url:
-    'https://i1.sndcdn.com/avatars-Iupp3CJ3dozLl03E-29z6mQ-t500x500.jpg',
-  description: 'list index out of range',
-}
-
-const Arccat: IProfile = {
-  profile_link: "https://osu.ppy.sh/users/4848294",
-  username: "cat",
-  profile_pic_url: "http://s.ppy.sh/a/4848294",
-  description: "sv cat. fart cart."
-}
-
-const TheFunk: IProfile = {
-  profile_link: "https://osu.ppy.sh/users/13981991",
-  username: "TheFunk",
-  profile_pic_url: "http://s.ppy.sh/a/13981991",
-  description: "Intern here but I'm just here for Capybaras"
-}
-
-const Auxesiaa: IProfile = {
-  profile_link: "https://osu.ppy.sh/users/16417718",
-  username: "Aux",
-  profile_pic_url: "http://s.ppy.sh/a/16417718",
-  description: "Pēdīcābo ego vōs et irrumābō"
 }
 
 // Stories
