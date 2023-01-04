@@ -7,7 +7,7 @@ export interface IPost {
   image: string;
   header: IHeader;
   article_url: string;
-  author: IProfile;
+  authors: IProfile[];
 }
 
 export interface IState {
@@ -46,7 +46,13 @@ class Post extends React.Component<IPost, IState> {
         >
           <Article article_url={this.props.article_url} />
           {/* Profile */}
-          <Profile {...this.props.author} />
+          <div style={{display: 'block'}}>
+            {
+              this.props.authors.map((author) => {
+                return <Profile {...author} />
+              })
+            }
+          </div>
         </div>
       </div>
     );
