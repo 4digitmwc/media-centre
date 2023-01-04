@@ -25,7 +25,7 @@ const sample_story: IArticle = {
     },
     article_url:
       'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/stories/sample.md',
-    author: HowToPlayLN,
+    authors: [HowToPlayLN, Auxesiaa],
     image: 'https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662',
   }
 }
@@ -44,7 +44,7 @@ const sample_interview: IArticle = {
     },
     article_url:
       'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/interviews/sample.md',
-    author: Arccat,
+    authors: [Arccat, TheFunk],
     image: 'https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662',
   }
 }
@@ -63,7 +63,7 @@ const sample_opinion: IArticle = {
     },
     article_url:
       'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/opinions/sample.md',
-    author: Auxesiaa,
+    authors: [Auxesiaa, Polytetral],
     image: 'https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662',
   }
 }
@@ -82,7 +82,7 @@ const sample_highlight: IArticle = {
     },
     article_url:
       'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/highlights/sample.md',
-    author: TheFunk,
+    authors: [TheFunk],
     image: 'https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662',
   }
 }
