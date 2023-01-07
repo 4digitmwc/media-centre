@@ -30,7 +30,20 @@ const sample_story: IArticle = {
   }
 }
 
-const stories = [sample_story]
+const week0: IArticle = {
+  postName: 'infinity',
+  post: {
+    header: {
+      title: 'Chapter 0: Infinity',
+      subtitle: 'As one\'s story and life approaches its limit, another one starts in search of continuity of mankind.'
+    },
+    article_url: 'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/stories/week0.md',
+    authors: [Polytetral, HowToPlayLN],
+    image: 'https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662'
+  }
+}
+
+const stories = [week0]
 
 // Interviews
 
@@ -68,7 +81,20 @@ const sample_opinion: IArticle = {
   }
 }
 
-const opinions = [sample_opinion]
+const week0_opinion: IArticle = {
+  postName: 'managing-ambitious-tournaments',
+  post: {
+    header: {
+      title: 'Be Ambitious and Be Cautious!',
+      subtitle: 'It is one thing to start a tournament with passion, but what really ensures that staffs strive to give their best week after week of labour, players continue to buy your idea with enthusiasm, and leave spectators craving for more following every stage? In other words, what makes a tournament truly succeed beyond simple completion?'
+    },
+    article_url: "https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/opinions/week0.md",
+    authors: [Polytetral],
+    image: 'https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662'
+  }
+}
+
+const opinions = [week0_opinion]
 
 // Highlights
 
