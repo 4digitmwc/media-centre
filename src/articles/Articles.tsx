@@ -1,5 +1,5 @@
 import { IPost } from "../components/Post/Post"
-import { HowToPlayLN, Auxesiaa, Arccat, Leon, TheFunk, Polytetral } from "./Profiles"
+import { HowToPlayLN, Auxesiaa, Arccat, Leon, TheFunk, Polytetral, Komi, Evening } from "./Profiles"
 
 export interface IArticle {
   postName: string;
@@ -43,7 +43,20 @@ const week0: IArticle = {
   }
 }
 
-const stories = [week0]
+const week1: IArticle = {
+  postName: 'wandering',
+  post: {
+    header: {
+      title: 'Chapter 1: Wandering',
+      subtitle: "tba"
+    },
+    article_url: 'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/stories/week1.md',
+    authors: [HowToPlayLN],
+    image: 'https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662'
+  }
+}
+
+const stories = [week0, week1]
 
 // Interviews
 
@@ -94,7 +107,20 @@ const week0_opinion: IArticle = {
   }
 }
 
-const opinions = [week0_opinion]
+const week1_opinion: IArticle = {
+  postName: 'mathematical-maniac',
+  post: {
+    header: {
+      title: 'Coffee Session with Mathematical Maniacs',
+      subtitle: 'What was hidden inside the mind of Mathematical Maniacs? How do they use math to create the fascinating phenomenas in osu!mania? Let\'s find out in this coffee session discussion!'
+    },
+    article_url: "https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/opinions/week1.md",
+    authors: [Evening, Komi, HowToPlayLN],
+    image: "https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662"
+  }
+}
+
+const opinions = [week0_opinion, week1_opinion]
 
 // Highlights
 

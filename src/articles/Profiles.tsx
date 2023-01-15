@@ -42,4 +42,17 @@ export const Leon: IProfile = {
     profile_pic_url: "https://s.ppy.sh/a/13382147",
     description: "a chef who self-allegedly likes to tidur. serving corrective work order by writing confession articles for Media Centre."
 }
-  
+
+export const Evening: IProfile = {
+    profile_link: "https://osu.ppy.sh/users/2193881",
+    username: "Evening",
+    profile_pic_url: "https://cdn.discordapp.com/attachments/1054656607281229844/1062697667597180928/Signature.png",
+    description: "the cutest data magician"
+}
+
+export const Komi: IProfile = {
+    profile_link: "https://osu.ppy.sh/users/4725379",
+    username: "Komirin",
+    profile_pic_url: "https://cdn.discordapp.com/attachments/1054656607281229844/1063256922725298226/43741444.jpg",
+    description: "Shark-girl afraid of complex numbers"
+}
