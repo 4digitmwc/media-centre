@@ -48,7 +48,7 @@ const week1: IArticle = {
   post: {
     header: {
       title: 'Chapter 1: Wandering',
-      subtitle: "tba"
+      subtitle: "A new beginning rises over the horizon as the endless space expedition finally leads to discovery."
     },
     article_url: 'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/stories/week1.md',
     authors: [HowToPlayLN],
