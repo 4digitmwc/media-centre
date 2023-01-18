@@ -64,7 +64,7 @@ const StatisticsDashboard: IThumbnail = {
 };
 
 const FantasyLeague: IThumbnail = {
-  redirect_url: 'https://www.youtube.com/watch?v=fowOHiOJC7g',
+  redirect_url: 'https://docs.google.com/spreadsheets/d/1kd-yzW9PUFKyuVtpg_fnC6YD9Z3IkoyAc0EZBTp3JZU/edit?usp=sharing',
   thumbnail_url:
     'https://media.discordapp.net/attachments/512920101423415306/1058437396036862034/grey2.png?width=1053&height=662',
   size: {
