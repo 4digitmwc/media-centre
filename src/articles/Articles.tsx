@@ -75,7 +75,23 @@ const sample_interview: IArticle = {
   }
 }
 
-const interviews = [sample_interview]
+const week1_interview: IArticle = {
+  postName: "week-1",
+  post: {
+    header: {
+      title: 'Post Qualifiers Interview',
+      subtitle:
+        'Let\'s see how the first seed Singapore, and the newborn team, Nicaragua are doing! Alongside with the Carbonara tips from Italy!',
+    },
+    article_url:
+      'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/interviews/week1.md',
+    authors: [Arccat, TheFunk, Polytetral],
+    image: 'https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662',
+  }
+}
+
+
+const interviews = [week1_interview]
 
 // Opinions
 
