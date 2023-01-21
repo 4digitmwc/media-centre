@@ -53,7 +53,7 @@ const OpinionofTheWeek: IThumbnail = {
 };
 
 const StatisticsDashboard: IThumbnail = {
-  redirect_url: 'https://www.youtube.com/watch?v=fowOHiOJC7g',
+  redirect_url: 'https://4digitmwc-media-centre-statistics-app-79085s.streamlit.app/',
   thumbnail_url:
     'https://cdn.discordapp.com/attachments/512920101423415306/1058437397827833987/grey7.png',
   size: {
