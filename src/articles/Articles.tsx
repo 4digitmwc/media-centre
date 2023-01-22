@@ -56,7 +56,20 @@ const week1: IArticle = {
   }
 }
 
-const stories = [week0, week1]
+const week2: IArticle = {
+  postName: 'contamination',
+  post: {
+    header: {
+      title: 'Chapter 2: Contamination',
+      subtitle: 'An innocent action can have uncontrollable outcomes'
+    },
+    article_url: 'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/stories/week2.md',
+    authors: [Leon, Auxesiaa],
+    image: 'https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662'
+  }
+}
+
+const stories = [week0, week1, week2]
 
 // Interviews
 
@@ -136,7 +149,20 @@ const week1_opinion: IArticle = {
   }
 }
 
-const opinions = [week0_opinion, week1_opinion]
+const week2_opinion: IArticle = {
+  postName: 'percy',
+  post: {
+    header: {
+      title: 'Percy LNs: A Scourge or A Blessing?',
+      subtitle: 'Percy LNs have revolutionised modern LN play, with players achieving crazier and increasingly unfathomable LN scores with each passing day. At the same time, they have caused minor disagreements amongst players. So what are Percy LNs exactly, and what effect do they have on osu!mania gameplay?'
+    },
+    article_url: 'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/opinions/week2.md',
+    authors: [Auxesiaa],
+    image: "https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662"
+  }
+}
+
+const opinions = [week0_opinion, week1_opinion, week2_opinion]
 
 // Highlights
 
