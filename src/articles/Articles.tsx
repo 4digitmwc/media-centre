@@ -181,7 +181,20 @@ const sample_highlight: IArticle = {
   }
 }
 
-const highlights = [sample_highlight]
+const ro32_highlight: IArticle = {
+  postName: "ro32",
+  post: {
+    header: {
+      title: "Philippines vs. Japan: The initialization of the essence",
+      subtitle: " The tiebreaker is undeniably the essence of all tournaments, how does this match gets into the first tiebreaker of this tournament?"
+    },
+    article_url: "https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/highlights/ro32.md",
+    authors: [Leon, HowToPlayLN],
+    image: 'https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662',
+  }
+}
+
+const highlights = [ro32_highlight]
 
 export const Articles: IArticles = {
   stories, interviews, opinions, highlights
