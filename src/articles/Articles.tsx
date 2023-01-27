@@ -103,8 +103,21 @@ const week1_interview: IArticle = {
   }
 }
 
+const week2_interview: IArticle = {
+  postName: "week-2",
+  post: {
+    header: {
+      title: 'Team Insights: RO32 Interview',
+      subtitle: "Many notable matches and interesting sparks have resulted from the Round of 32. Today we take it to Team Philippines for the first tiebreaker of the tournament, Poland for their seed upset, and Thailand propaganda publicity!"
+    },
+    article_url: 'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/interviews/week2.md',
+    authors: [Arccat, Polytetral, HowToPlayLN],
+    image: 'https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662',
+  }
+}
 
-const interviews = [week1_interview]
+
+const interviews = [week1_interview, week2_interview]
 
 // Opinions
 
