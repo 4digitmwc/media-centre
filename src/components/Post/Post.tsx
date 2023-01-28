@@ -7,6 +7,7 @@ export interface IPost {
   image: string;
   header: IHeader;
   article_url: string;
+  table_of_content: boolean;
   authors: IProfile[];
 }
 
@@ -48,7 +49,7 @@ class Post extends React.Component<IPost, IState> {
             minHeight: "100vh"
           }}
         >
-          <Article article_url={this.props.article_url} />
+          <Article article_url={this.props.article_url} table_of_content={this.props.table_of_content} />
           {/* Profile */}
           <div style={{display: 'block'}}>
             {
