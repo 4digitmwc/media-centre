@@ -1,15 +1,66 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import axios from 'axios';
+import generateSlug from '../../utils/generateSlug';
+import tableOfContents from '../../utils/tableOfContents';
 
 interface IArticle {
   article_url: string;
+  table_of_content: boolean
 }
 
 interface IState {
   article: string;
   loading: boolean;
   error: boolean;
+}
+
+const MarkdownComponent: object = {
+	h1: (props: any) => {
+		const arr = props.children 
+	  let heading = ''
+
+	  for (let i = 0; i < arr.length; i++) {
+	    if (arr[i]?.type !== undefined) {
+	      for (let j = 0; j < arr[i].props.children.length; j++) {
+	        heading += arr[i]?.props?.children[0]
+	      }
+	    } else heading += arr[i]
+	  }
+
+	  const slug = generateSlug(heading)
+	  return <h1 id={slug}>{props.children}</h1>
+	},
+	h2: (props: any) => {
+		const arr = props.children 
+	  let heading = ''
+
+	  for (let i = 0; i < arr.length; i++) {
+	    if (arr[i]?.type !== undefined) {
+	      for (let j = 0; j < arr[i].props.children.length; j++) {
+	        heading += arr[i]?.props?.children[0]
+	      }
+	    } else heading += arr[i]
+	  }
+
+	  const slug = generateSlug(heading)
+	  return <h2 id={slug}>{props.children}</h2>
+	},
+	h3: (props: any) => {
+		const arr = props.children 
+	  let heading = ''
+
+	  for (let i = 0; i < arr.length; i++) {
+	    if (arr[i]?.type !== undefined) {
+	      for (let j = 0; j < arr[i].props.children.length; j++) {
+	        heading += arr[i]?.props?.children[0]
+	      }
+	    } else heading += arr[i]
+	  }
+
+	  const slug = generateSlug(heading)
+	  return <h3 id={slug}>{props.children}</h3>
+	}
 }
 
 class Article extends React.Component<IArticle, IState> {
@@ -34,7 +85,13 @@ class Article extends React.Component<IArticle, IState> {
       this.setLoading(true);
       const article_response = await axios.get(this.props.article_url);
       const article_data = await article_response.data;
-      this.setArticle(article_data);
+      if (this.props.table_of_content) {
+        const table_of_content = tableOfContents(article_data)
+        this.setArticle(table_of_content + "\n---\n" + article_data)
+      }
+      else {
+        this.setArticle(article_data);
+      }
     } catch (error) {
       this.setError(true);
     } finally {
@@ -73,7 +130,7 @@ class Article extends React.Component<IArticle, IState> {
 
     return (
       <section style={{ width: '65%', textAlign: 'left', marginLeft: 40}}>
-        <ReactMarkdown>{this.state.article}</ReactMarkdown>
+        <ReactMarkdown components={MarkdownComponent}>{this.state.article}</ReactMarkdown>
       </section>
     );
   }
