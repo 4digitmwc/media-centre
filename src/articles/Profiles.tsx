@@ -35,6 +35,13 @@ export const Polytetral: IProfile = {
     profile_pic_url: "https://cdn.discordapp.com/attachments/546525809440194560/1059519438644334622/nyom2.jpg",
     description: "Intern of Media Centre. Missed about 727 days of attendance."
 }
+
+export const Polytetral_as_Index: IProfile = {
+    profile_link: "https://osu.ppy.sh/users/8612061",
+    username: "Polytetral (as index)",
+    profile_pic_url: "https://cdn.discordapp.com/attachments/546525809440194560/1059519438644334622/nyom2.jpg",
+    description: "Intern of Media Centre. Missed about 727 days of attendance."
+}
   
 export const Leon: IProfile = {
     profile_link: "https://osu.ppy.sh/users/13382147",

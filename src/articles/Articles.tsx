@@ -1,5 +1,5 @@
 import { IPost } from "../components/Post/Post"
-import { HowToPlayLN, Auxesiaa, Arccat, Leon, TheFunk, Polytetral, Komi, Evening } from "./Profiles"
+import { HowToPlayLN, Auxesiaa, Arccat, Leon, TheFunk, Polytetral, Komi, Evening, Polytetral_as_Index } from "./Profiles"
 
 export interface IArticle {
   postName: string;
@@ -73,7 +73,21 @@ const week2: IArticle = {
   }
 }
 
-const stories = [week0, week1, week2]
+const week3: IArticle = {
+  postName: "antagonism",
+  post: {
+    header: {
+      title: "Chapter 3: Antagonism",
+      subtitle: "Along the monochromatic world of Zion, was that tragedy brought us here?"
+    },
+    article_url: 'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/stories/week3.md',
+    authors: [Polytetral_as_Index, Auxesiaa],
+    image: 'https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662',
+    table_of_content: false
+  }
+}
+
+const stories = [week0, week1, week2, week3]
 
 // Interviews
 
@@ -186,7 +200,21 @@ const week2_opinion: IArticle = {
   }
 }
 
-const opinions = [week0_opinion, week1_opinion, week2_opinion]
+const week3_opinion: IArticle = {
+  postName: 'evolution-tournaments',
+  post: {
+    header: {
+      title: 'Evolution of the meta in osu!mania Tournament Maps',
+      subtitle: 'What was our community like back in the days? And how the meta ended up being what we are witnessing these days?'
+    },
+    article_url: 'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/opinions/week3.md',
+    authors: [Auxesiaa, Polytetral, Leon, HowToPlayLN],
+    image: "https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662",
+    table_of_content: true,
+  }
+}
+
+const opinions = [week0_opinion, week1_opinion, week2_opinion, week3_opinion]
 
 // Highlights
 
