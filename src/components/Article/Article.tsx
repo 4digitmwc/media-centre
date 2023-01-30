@@ -60,7 +60,10 @@ const MarkdownComponent: object = {
 
 	  const slug = generateSlug(heading)
 	  return <h3 id={slug}>{props.children}</h3>
-	}
+	},
+  a: (props: any) => {
+    return <a {...props} style={{textDecoration:"underline"}}>{props.children}</a>
+  }
 }
 
 class Article extends React.Component<IArticle, IState> {
