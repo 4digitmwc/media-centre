@@ -60,7 +60,10 @@ const MarkdownComponent: object = {
 
 	  const slug = generateSlug(heading)
 	  return <h3 id={slug}>{props.children}</h3>
-	}
+	},
+  a: (props: any) => {
+    return <a {...props} style={{textDecoration:"underline"}}>{props.children}</a>
+  }
 }
 
 class Article extends React.Component<IArticle, IState> {
@@ -85,13 +88,7 @@ class Article extends React.Component<IArticle, IState> {
       this.setLoading(true);
       const article_response = await axios.get(this.props.article_url);
       const article_data = await article_response.data;
-      if (this.props.table_of_content) {
-        const table_of_content = tableOfContents(article_data)
-        this.setArticle(table_of_content + "\n---\n" + article_data)
-      }
-      else {
-        this.setArticle(article_data);
-      }
+      this.setArticle(article_data);
     } catch (error) {
       this.setError(true);
     } finally {
@@ -128,8 +125,15 @@ class Article extends React.Component<IArticle, IState> {
       return <section></section>;
     }
 
+    let table_of_content: any = null;
+
+    if (this.props.table_of_content) {
+      table_of_content = <ReactMarkdown>{tableOfContents(this.state.article)}</ReactMarkdown>
+    }
+
     return (
       <section style={{ width: '65%', textAlign: 'left', marginLeft: 40}}>
+        {table_of_content}
         <ReactMarkdown components={MarkdownComponent}>{this.state.article}</ReactMarkdown>
       </section>
     );
