@@ -26,7 +26,7 @@ export const Auxesiaa: IProfile = {
     profile_link: "https://osu.ppy.sh/users/16417718",
     username: "Aux",
     profile_pic_url: "http://s.ppy.sh/a/16417718",
-    description: "Pēdīcābo ego vōs et irrumābō"
+    description: "Junior intern 1 semester away from graduating."
 }
   
 export const Polytetral: IProfile = {
