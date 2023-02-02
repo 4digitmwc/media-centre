@@ -63,3 +63,10 @@ export const Komi: IProfile = {
     profile_pic_url: "https://cdn.discordapp.com/attachments/1054656607281229844/1063256922725298226/43741444.jpg",
     description: "Shark-girl afraid of complex numbers"
 }
+
+export const PorkIsGreat: IProfile = {
+    profile_link: "https://osu.ppy.sh/users/10756322",
+    username: "PorkIsGreat",
+    profile_pic_url: "https://cdn.discordapp.com/attachments/1069537634168361000/1070425041671569408/IMG_3966.png",
+    description: "chances of pork giving you 1 year of osu supporter is 72.7% if he knows you well"
+}
