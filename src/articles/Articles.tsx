@@ -1,5 +1,5 @@
 import { IPost } from "../components/Post/Post"
-import { HowToPlayLN, Auxesiaa, Arccat, Leon, TheFunk, Polytetral, Komi, Evening, Polytetral_as_Index } from "./Profiles"
+import { HowToPlayLN, Auxesiaa, Arccat, Leon, TheFunk, Polytetral, Komi, Evening, Polytetral_as_Index, PorkIsGreat } from "./Profiles"
 
 export interface IArticle {
   postName: string;
@@ -137,8 +137,21 @@ const week2_interview: IArticle = {
   }
 }
 
+const week3_interview: IArticle = {
+  postName: "week-3",
+  post: {
+    header: {
+      title: '4DMWC 5 RO16 Interviews ft. USA, Canada & Itourith (Chile)!!!',
+      subtitle: "The United States of Strategies, Canada's revenge arc, & the re-emergence of Chile!"
+    },
+    article_url: 'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/interviews/week3.md',
+    authors: [PorkIsGreat],
+    image: 'https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662',
+    table_of_content: true
+  }
+}
 
-const interviews = [week1_interview, week2_interview]
+const interviews = [week1_interview, week2_interview, week3_interview]
 
 // Opinions
 
@@ -239,7 +252,7 @@ const ro32_highlight: IArticle = {
   post: {
     header: {
       title: "Philippines vs. Japan: The initialization of the essence",
-      subtitle: " The tiebreaker is undeniably the essence of all tournaments, how does this match gets into the first tiebreaker of this tournament?"
+      subtitle: "The tiebreaker is undeniably the essence of all tournaments, how does this match gets into the first tiebreaker of this tournament?"
     },
     article_url: "https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/highlights/ro32.md",
     authors: [Leon, HowToPlayLN],
@@ -248,7 +261,21 @@ const ro32_highlight: IArticle = {
   }
 }
 
-const highlights = [ro32_highlight]
+const ro16_highlight: IArticle = {
+  postName: "ro16",
+  post: {
+    header: {
+      title: "The Discovery Begins",
+      subtitle: "Media Centre brings to you an interpretation of the uncovered match between Thailand and the United States!"
+    },
+    article_url: "https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/highlights/ro16.md",
+    authors: [Polytetral],
+    image: "https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662",
+    table_of_content: true
+  }
+}
+
+const highlights = [ro32_highlight, ro16_highlight]
 
 export const Articles: IArticles = {
   stories, interviews, opinions, highlights
