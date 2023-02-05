@@ -94,7 +94,7 @@ const week4: IArticle = {
       title: "Chapter 4: Navigating the Uncertainty",
       subtitle: "As Index investigates the untimely death of the girl causing chaos all over Zion, he discovers bits and pieces of his past life that may connect the dots of this mystery"
     },
-    article_url: "https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/stories/week3.md",
+    article_url: "https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/stories/week4.md",
     authors: [HowToPlayLN],
     image: "https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662",
     table_of_content: false
