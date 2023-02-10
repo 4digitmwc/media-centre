@@ -165,7 +165,21 @@ const week3_interview: IArticle = {
   }
 }
 
-const interviews = [week1_interview, week2_interview, week3_interview]
+const week4_interview: IArticle = {
+  postName: "week-4",
+  post: {
+    header: {
+      title: '4DMWC 5 QFs interviews ft. Sweden, Japan, & Brazil!',
+      subtitle: "Sweden's unfortunate exit, Japan's hot momentum continues, & Brazil's eyeing for podium!"
+    },
+    article_url: 'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/interviews/week4.md',
+    authors: [PorkIsGreat],
+    image: 'https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662',
+    table_of_content: true
+  }
+}
+
+const interviews = [week1_interview, week2_interview, week3_interview, week4_interview]
 
 // Opinions
 
@@ -289,7 +303,21 @@ const ro16_highlight: IArticle = {
   }
 }
 
-const highlights = [ro32_highlight, ro16_highlight]
+const qf_highlight: IArticle = {
+  postName: "qf",
+  post: {
+    header: {
+      title: "Japan vs Sweden: The greatest comeback or the inevitable defeat?",
+      subtitle: "Sweden tried to escape the sweep from Japan, do they succeed? Or it was an inevitable fate?"
+    },
+    article_url: "https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/highlights/qf.md",
+    authors: [PorkIsGreat],
+    image: "https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662",
+    table_of_content: true
+  }
+}
+
+const highlights = [ro32_highlight, ro16_highlight, qf_highlight]
 
 export const Articles: IArticles = {
   stories, interviews, opinions, highlights
