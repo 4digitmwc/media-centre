@@ -101,7 +101,21 @@ const week4: IArticle = {
   }
 }
 
-const stories = [week0, week1, week2, week3, week4]
+const week5: IArticle = {
+  postName: "resolve",
+  post: {
+    header: {
+      title: "Chapter 5: Resolve",
+      subtitle: "tba"
+    },
+    article_url: "https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/stories/week5.md",
+    authors: [HowToPlayLN],
+    image: "https://cdn.discordapp.com/attachments/546525809440194560/1074370849181810728/lushill-style-low-angle-close-shot-of-young-man-looking-remorseful-holding-a-candle-looking-upwards-751908880.png",
+    table_of_content: false
+  }
+}
+
+const stories = [week0, week1, week2, week3, week4, week5]
 
 // Interviews
 
@@ -255,7 +269,21 @@ const week3_opinion: IArticle = {
   }
 }
 
-const opinions = [week0_opinion, week1_opinion, week2_opinion, week3_opinion]
+const week4_opinion: IArticle = {
+  postName: 'mania-beginner-guide',
+  post: {
+    header: {
+      title: 'osu!mania Improvement Guide for complete beginners',
+      subtitle: 'Not sure where to start with osu!mania, or just feeling frustrated about being unable to improve? Here are some personal reminders from our writers.'
+    },
+    article_url: 'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/opinions/week4.md',
+    authors: [Auxesiaa],
+    image: "https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662",
+    table_of_content: true,
+  }
+}
+
+const opinions = [week0_opinion, week1_opinion, week2_opinion, week3_opinion, week4_opinion]
 
 // Highlights
 
