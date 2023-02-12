@@ -106,7 +106,7 @@ const week5: IArticle = {
   post: {
     header: {
       title: "Chapter 5: Resolve",
-      subtitle: "tba"
+      subtitle: "The unusual discovery of the discrete event system, and the revival of the memories."
     },
     article_url: "https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/stories/week5.md",
     authors: [HowToPlayLN],
