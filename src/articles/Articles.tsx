@@ -208,7 +208,7 @@ const week5_interview_1: IArticle = {
 }
 
 const week5_interview_2: IArticle = {
-  postName: "week-5-1",
+  postName: "week-5-2",
   post: {
     header: {
       title: '4DMWC 5 SFs Interviews Pt. 2/2 ft. China, Hong Kong, and the United States!',
