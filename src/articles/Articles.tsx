@@ -193,7 +193,36 @@ const week4_interview: IArticle = {
   }
 }
 
-const interviews = [week1_interview, week2_interview, week3_interview, week4_interview]
+const week5_interview_1: IArticle = {
+  postName: "week-5-1",
+  post: {
+    header: {
+      title: '4DMWC 5 SFs Interviews Pt. 1/2 ft. Singapore, Malaysia, & Canada!',
+      subtitle:'Singapore\'s apathy reaction to Top 3, Malaysia\'s experience gets them to Top 6, and see Canada\'s POV of their match vs Singapore!'
+    },
+    article_url: 'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/interviews/week5-1.md',
+    authors: [PorkIsGreat],
+    image: 'https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662',
+    table_of_content: true
+  }
+}
+
+const week5_interview_2: IArticle = {
+  postName: "week-5-1",
+  post: {
+    header: {
+      title: '4DMWC 5 SFs Interviews Pt. 2/2 ft. China, Hong Kong, and the United States!',
+      subtitle: 'China’s interesting reaction to Top 3, Hong Kong making history, and we say good bye to the United States!'
+    },
+    article_url: 'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/interviews/week5-2.md',
+    authors: [PorkIsGreat],
+    image: 'https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662',
+    table_of_content: true
+  }
+}
+
+
+const interviews = [week1_interview, week2_interview, week3_interview, week4_interview, week5_interview_1, week5_interview_2]
 
 // Opinions
 
