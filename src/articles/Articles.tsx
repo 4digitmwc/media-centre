@@ -1,5 +1,5 @@
 import { IPost } from "../components/Post/Post"
-import { HowToPlayLN, Auxesiaa, Arccat, Leon, TheFunk, Polytetral, Komi, Evening, Polytetral_as_Index, PorkIsGreat } from "./Profiles"
+import { HowToPlayLN, Auxesiaa, Arccat, Leon, TheFunk, Polytetral, Komi, Evening, Polytetral_as_Index, PorkIsGreat, chxu } from "./Profiles"
 
 export interface IArticle {
   postName: string;
@@ -115,7 +115,21 @@ const week5: IArticle = {
   }
 }
 
-const stories = [week0, week1, week2, week3, week4, week5]
+const week6: IArticle = {
+  postName: "essence",
+  post: {
+    header: {
+      title: "Chapter 6: Essence",
+      subtitle: "Index goes to do what needs to be done for Zion."
+    },
+    article_url: "https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/stories/week6.md",
+    authors: [Polytetral, HowToPlayLN],
+    image: "https://cdn.discordapp.com/attachments/546525809440194560/1076889692131311687/normal_bg.png",
+    table_of_content: false
+  }
+}
+
+const stories = [week0, week1, week2, week3, week4, week5, week6]
 
 // Interviews
 
@@ -312,7 +326,21 @@ const week4_opinion: IArticle = {
   }
 }
 
-const opinions = [week0_opinion, week1_opinion, week2_opinion, week3_opinion, week4_opinion]
+const week5_opinion: IArticle = {
+  postName: 'pooling-thoughts',
+  post: {
+    header: {
+      title: "Exploring the Mappool Selection Thoughts with chxu!",
+      subtitle: "Ever wondered what goes through a pooler's mind when they create mappools? chxu is here to give a piece of his mind in pooling!"
+    },
+    article_url: 'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/opinions/week5.md',
+    authors: [chxu],
+    image: "https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662",
+    table_of_content: false
+  }
+}
+
+const opinions = [week0_opinion, week1_opinion, week2_opinion, week3_opinion, week4_opinion, week5_opinion]
 
 // Highlights
 
