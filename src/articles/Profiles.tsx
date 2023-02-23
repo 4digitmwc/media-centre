@@ -74,6 +74,6 @@ export const PorkIsGreat: IProfile = {
 export const chxu: IProfile = {
     profile_link: "https://osu.ppy.sh/users/13712190",
     username: "chxu",
-    profile_pic_url: "https://cdn.discordapp.com/attachments/1069537634168361000/1070425041671569408/IMG_3966.png",
-    description: "tba"
+    profile_pic_url: "https://cdn.discordapp.com/attachments/1066269228400910366/1076916350406119465/80BhIMZf_400x400.jpg",
+    description: "hoshinozzzgif"
 }

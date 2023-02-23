@@ -235,8 +235,21 @@ const week5_interview_2: IArticle = {
   }
 }
 
+const week6_interview: IArticle = {
+  postName: "week-6",
+  post: {
+    header: {
+      title: '4DMWC 5 Finals Interviews ft. the Top 4!',
+      subtitle: 'Hear the thoughts of the Top 4 teams following the Finals weekend.'
+    },
+    article_url: 'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/interviews/week6.md',
+    authors: [PorkIsGreat],
+    image: 'https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662',
+    table_of_content: true
+  }
+}
 
-const interviews = [week1_interview, week2_interview, week3_interview, week4_interview, week5_interview_1, week5_interview_2]
+const interviews = [week1_interview, week2_interview, week3_interview, week4_interview, week5_interview_1, week5_interview_2, week6_interview]
 
 // Opinions
 
@@ -402,7 +415,21 @@ const qf_highlight: IArticle = {
   }
 }
 
-const highlights = [ro32_highlight, ro16_highlight, qf_highlight]
+const finals_highlight: IArticle = {
+  postName: "finals",
+  post: {
+    header: {
+      title: "Brazil vs Canada: Match of the tournament?",
+      subtitle: "What is potentially one of the best matches of the tournament, take a look to see how these 2 teams managed to push each other to their limits until the very end!"
+    },
+    article_url: "https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/highlights/finals.md",
+    authors: [PorkIsGreat],
+    image: "https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662",
+    table_of_content: true
+  }
+}
+
+const highlights = [ro32_highlight, ro16_highlight, qf_highlight, finals_highlight]
 
 export const Articles: IArticles = {
   stories, interviews, opinions, highlights
