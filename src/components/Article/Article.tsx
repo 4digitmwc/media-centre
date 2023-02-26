@@ -63,6 +63,9 @@ const MarkdownComponent: object = {
 	},
   a: (props: any) => {
     return <a {...props} style={{textDecoration:"underline"}}>{props.children}</a>
+  },
+  img: (props: any) => {
+    return <img {...props} style={{maxWidth: 640, maxHeight: 480}} />
   }
 }
 

@@ -1,5 +1,5 @@
 import { IPost } from "../components/Post/Post"
-import { HowToPlayLN, Auxesiaa, Arccat, Leon, TheFunk, Polytetral, Komi, Evening, Polytetral_as_Index, PorkIsGreat, chxu } from "./Profiles"
+import { HowToPlayLN, Auxesiaa, Arccat, Leon, TheFunk, Polytetral, Komi, Evening, Polytetral_as_Index, PorkIsGreat, chxu, takehirotei, ImaginaryReality } from "./Profiles"
 
 export interface IArticle {
   postName: string;
@@ -353,7 +353,21 @@ const week5_opinion: IArticle = {
   }
 }
 
-const opinions = [week0_opinion, week1_opinion, week2_opinion, week3_opinion, week4_opinion, week5_opinion]
+const week6_opinion: IArticle = {
+  postName: 'behind-the-scenes-1',
+  post: {
+    header: {
+      title: "Media Centre Behind the Scene: Essence, the custom Grand Finals Tiebreaker Song",
+      subtitle: "Curious to know about the sorcery and magic behind the production of Essence? HowToPlayLN and takehirotei bring to you an extensive rundown of music theory and sound design choices that have all led to the creation of this astounding tiebreaker."
+    },
+    article_url: 'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/opinions/week6.md',
+    authors: [takehirotei, Polytetral, HowToPlayLN],
+    image: "https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662",
+    table_of_content: true
+  }
+}
+
+const opinions = [week0_opinion, week1_opinion, week2_opinion, week3_opinion, week4_opinion, week5_opinion, week6_opinion]
 
 // Highlights
 

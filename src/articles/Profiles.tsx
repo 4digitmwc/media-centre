@@ -77,3 +77,17 @@ export const chxu: IProfile = {
     profile_pic_url: "https://cdn.discordapp.com/attachments/1066269228400910366/1076916350406119465/80BhIMZf_400x400.jpg",
     description: "hoshinozzzgif"
 }
+
+export const takehirotei: IProfile = {
+    profile_link: "https://soundcloud.com/takehirotei",
+    username: "takehirotei",
+    profile_pic_url: "https://yt3.googleusercontent.com/Uqm5aczOtCe8gIeCVkqVHaiYdZ1sSRcVjQl-ibe4qpuFb8cwlOsPH_d2PChpUwMk0nl9fgn9Gg=s900-c-k-c0x00ffffff-no-rj",
+    description: "trust me, I'm not Imaginary Reality"
+}
+
+export const ImaginaryReality: IProfile = {
+    profile_link: "https://soundcloud.com/imaginaryrea1ity",
+    username: "Imaginary Reality",
+    profile_pic_url: "https://i1.sndcdn.com/avatars-pnHqTqF1Y5z9V6rq-DRbV0A-t240x240.jpg",
+    description: "trust me, I'm not takehiro"
+}
