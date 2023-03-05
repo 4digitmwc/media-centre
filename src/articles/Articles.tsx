@@ -367,7 +367,22 @@ const week6_opinion: IArticle = {
   }
 }
 
-const opinions = [week0_opinion, week1_opinion, week2_opinion, week3_opinion, week4_opinion, week5_opinion, week6_opinion]
+const week7_opinion: IArticle = {
+  postName: 'behind-the-scene-2',
+  post: {
+    header: {
+      title: "Media Centre Behind the Scene: The Articles and The Website",
+      subtitle: "Media Centre unveils their background of the Articles, Interviews and the Website!"
+    },
+    article_url: 'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/opinions/week7.md',
+    authors: [Polytetral, PorkIsGreat, HowToPlayLN],
+    image: "https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662",
+    table_of_content: true
+  }
+}
+
+const opinions = [week0_opinion, week1_opinion, week2_opinion, week3_opinion, 
+  week4_opinion, week5_opinion, week6_opinion, week7_opinion]
 
 // Highlights
 
