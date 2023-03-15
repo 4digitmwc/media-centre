@@ -249,7 +249,64 @@ const week6_interview: IArticle = {
   }
 }
 
-const interviews = [week1_interview, week2_interview, week3_interview, week4_interview, week5_interview_1, week5_interview_2, week6_interview]
+const week71_interview: IArticle = {
+  postName: "week-7-1",
+  post: {
+    header: {
+      title: '4DM23 The Grand Finalists Interview feat. Canada, China and Singapore',
+      subtitle: 'What are the afterthoughts of China after winning, Singapore after trying their best to challenge them, and Canada who secured the third place of this tournament!'
+    },
+    article_url: 'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/interviews/week7-1.md',
+    authors: [PorkIsGreat],
+    image: 'https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662',
+    table_of_content: true
+  }
+}
+
+const week72_interview: IArticle = {
+  postName: "week-7-2",
+  post: {
+    header: {
+      title: '4DM23 Coordinators Interview: The thoughtful insight of the tournament organizations. feat. Logan, Danny and Paturages',
+      subtitle: 'Exploring on how tournament organizers are doing, and how the tournament was made, as well as coordination inside the staff team.'
+    },
+    article_url: 'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/interviews/week7-2.md',
+    authors: [PorkIsGreat],
+    image: 'https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662',
+    table_of_content: true
+  }
+}
+
+const week73_interview: IArticle = {
+  postName: "week-7-3",
+  post: {
+    header: {
+      title: '4DM23 Poolers Interview: Exploring the mappool managements and custom maps with DemiFiendSMT, Eclipse_ and FelixSpade',
+      subtitle: 'We again explore the thoughts behind pooling inside the Mappool Selectors team, as well as the thoughts inside the custom mappers.'
+    },
+    article_url: 'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/interviews/week7-3.md',
+    authors: [PorkIsGreat],
+    image: 'https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662',
+    table_of_content: true
+  }
+}
+
+const week74_interview: IArticle = {
+  postName: "week-7-4",
+  post: {
+    header: {
+      title: '4DM23 Referee, Streamer and Commentator Interview: What\'s behind the front stage of 4 Digit MWC 2023 Matchups? feat. Poity, Dynascape and NightNarumi',
+      subtitle: 'Let\'s hear the thoughts of Referee, Streamer and Commentator on this tournament!'
+    },
+    article_url: 'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/interviews/week7-4.md',
+    authors: [PorkIsGreat],
+    image: 'https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662',
+    table_of_content: true
+  }
+}
+
+
+const interviews = [week1_interview, week2_interview, week3_interview, week4_interview, week5_interview_1, week5_interview_2, week6_interview, week71_interview, week72_interview, week73_interview, week74_interview]
 
 // Opinions
 
@@ -381,8 +438,22 @@ const week7_opinion: IArticle = {
   }
 }
 
+const week8_opinion: IArticle = {
+  postName: 'behind-the-scene-3',
+  post: {
+    header: {
+      title: 'Media Centre Behind the Scene: The Essence of Storyboarding',
+      subtitle: 'The storyboard is undeniably one of the essence in the astounding experiences in Tiebreaker Showcase, what are the techniques we used behind these effects?'
+    },
+    article_url: 'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/opinions/week8.md',
+    authors: [Polytetral, HowToPlayLN],
+    image: "https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662",
+    table_of_content: true
+  }
+}
+
 const opinions = [week0_opinion, week1_opinion, week2_opinion, week3_opinion, 
-  week4_opinion, week5_opinion, week6_opinion, week7_opinion]
+  week4_opinion, week5_opinion, week6_opinion, week7_opinion, week8_opinion]
 
 // Highlights
 
@@ -458,7 +529,21 @@ const finals_highlight: IArticle = {
   }
 }
 
-const highlights = [ro32_highlight, ro16_highlight, qf_highlight, finals_highlight]
+const grandfinals_highlight: IArticle = {
+  postName: 'grand-finals',
+  post: {
+    header: {
+      title: 'The Grand Finale: China vs. Singapore',
+      subtitle: 'What is the conclusion of 4 Digit MWC 2023?'
+    },
+    article_url: 'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/highlights/gf.md',
+    authors: [Polytetral, HowToPlayLN],
+    image: "https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662",
+    table_of_content: true
+  }
+}
+
+const highlights = [ro32_highlight, ro16_highlight, qf_highlight, finals_highlight, grandfinals_highlight]
 
 export const Articles: IArticles = {
   stories, interviews, opinions, highlights
