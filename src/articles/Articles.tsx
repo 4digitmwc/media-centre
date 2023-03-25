@@ -452,8 +452,22 @@ const week8_opinion: IArticle = {
   }
 }
 
+const week9_opinion: IArticle = {
+  postName: 'behind-the-scene-4',
+  post: {
+    header: {
+      title: 'Media Centre Behind the Scene: Album and Videos',
+      subtitle: "We revealed how the album, Essence, and the lore videos were originated, as well as the last words from the artists and the video editor!"
+    },
+    article_url: 'https://raw.githubusercontent.com/4digitmwc/media-centre-articles/main/opinions/week9.md',
+    authors: [Polytetral, HowToPlayLN, takehirotei, ImaginaryReality],
+    image: "https://media.discordapp.net/attachments/672354730814734336/994520362261950524/Background.png?width=1178&height=662",
+    table_of_content: true
+  }
+}
+
 const opinions = [week0_opinion, week1_opinion, week2_opinion, week3_opinion, 
-  week4_opinion, week5_opinion, week6_opinion, week7_opinion, week8_opinion]
+  week4_opinion, week5_opinion, week6_opinion, week7_opinion, week8_opinion, week9_opinion]
 
 // Highlights
 
